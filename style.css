@@ -208,6 +208,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: center;
   height: 50px;
 }
 
@@ -225,12 +226,44 @@ body {
   color: black;
   font-size: 25px;
   transition: 0.2s;
-  padding: 5px 8px;
   border-radius: 50%;
+}
+
+.header-btns button {
+  font-size: 21px;
+  border: none;
+  background: none;
 }
 
 .header-btns a:hover {
   font-size: 30px;
+}
+
+.header-btns .dropdown-menu {
+  opacity: 1;
+  animation: Opacity 0.3s linear;
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-btns .dropdown-menu li a {
+  font-size: 1rem;
+}
+
+.header-btns .dropdown-menu li a {
+  border-radius: 0%;
+  margin: 20px 5px;
+}
+
+.header-btns .dropdown-menu li a i {
+  margin-right: 10px;
 }
 
 .dashboard-cols .card {
@@ -337,6 +370,10 @@ body {
     left: 0;
     transition: all 0.5s ease;
     z-index: 2;
-    padding: 30px;
+    padding: 15px;
+  }
+
+  .dashboard-section .welcome-text {
+    font-size: 1.3rem;
   }
 }

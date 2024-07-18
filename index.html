@@ -125,10 +125,21 @@
     <section class="dashboard-section">
 
         <header>
-            <h1 class="welcome-text">Welcome Back <span>Vijay!</span></h1>
+            <div>
+                <h1 class="welcome-text">Welcome Back <span>Vijay!</span></h1>
+            </div>
             <div class="header-btns">
                 <a href=""><i class='bx bx-notification'></i></a>
                 <a href=""><i class='bx bx-user-circle'></i></a>
+                <button type="button" class="d-lg-none" data-bs-toggle="dropdown" aria-expanded="false"><iconify-icon
+                        icon="ph:dots-three-vertical-bold"></iconify-icon></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class='bx bx-wallet'></i>Reimbursement</a></li>
+                    <li><a class="dropdown-item" href="#"><i class='bx bx-donate-heart'></i>Loans</a></li>
+                    <li><a class="dropdown-item" href="#"><i><iconify-icon
+                                    icon="f7:tickets"></iconify-icon></i>Tickets</a></li>
+                    <li><a class="dropdown-item" href="#"><i class='bx bx-log-out' id="log_out"></i>Logout</a></li>
+                </ul>
             </div>
         </header>
 
@@ -216,7 +227,7 @@
             </div>
 
         </div>
-    
+
     </section>
 
     <!-- Scripts -->
