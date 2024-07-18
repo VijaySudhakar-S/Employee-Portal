@@ -239,33 +239,6 @@ body {
   font-size: 30px;
 }
 
-.header-btns .dropdown-menu {
-  opacity: 1;
-  animation: Opacity 0.3s linear;
-}
-
-@keyframes Opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.header-btns .dropdown-menu li a {
-  font-size: 1rem;
-}
-
-.header-btns .dropdown-menu li a {
-  border-radius: 0%;
-  margin: 20px 5px;
-}
-
-.header-btns .dropdown-menu li a i {
-  margin-right: 10px;
-}
-
 .dashboard-cols .card {
   border-radius: 5px;
   display: flex;
@@ -358,6 +331,47 @@ body {
   .mobilebar li a i {
     font-size: 1.2rem;
     margin-bottom: 8px;
+  }
+
+  .mobilebar li button {
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+    background-color:#11101d;
+    border: none;
+  }
+
+  .mobilebar li button i {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  @keyframes Opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+  .dropdown-menu {
+    opacity: 1;
+    animation: Opacity 0.3s linear;
+  }
+
+  .dropdown-menu li a {
+    border-radius: 0%;
+    margin: 15px 5px;
+    font-size: 1rem;
+    color: #11101d;
+    display: inline-block;
+  }
+
+  .dropdown-menu li a i {
+    margin-right: 10px;
   }
 
   /* Dashboard */
