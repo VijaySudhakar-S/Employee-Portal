@@ -130,7 +130,7 @@
         </div>
     </div>
 
-    <!-- Dashboard -->
+    <!-- Leaves -->
 
     <section class="dashboard-section">
 
@@ -143,6 +143,133 @@
                 <a href=""><i class='bx bx-user-circle'></i></a>
             </div>
         </header>
+
+        <div class="my-4 ">
+            <h4 style="font-weight: 500;">Leaves Balance</h4>
+        </div>
+
+        <div class="row g-3 g-md-4">
+            <div class="col col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Leave</h5>
+                        <p class="card-text">10 Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sick Leave</h5>
+                        <p class="card-text">5 Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col12 col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Other Leave</h5>
+                        <p class="card-text">2 Days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mt-lg-5 leave-form d-flex justify-content-center">
+            <h4>Apply for Leave</h4>
+            <form action="" class="row  px-lg-5 mt-3">
+                <div class="col-6 leave-type">
+                    <h6>Leave Type</h6>
+                    <input type="radio" id="annual_leave" name="leave_type" value="Annual Leave">
+                    <label for="annual_leave">Annual Leave</label> <br class="d-md-none">
+                    <input type="radio" id="sick_leave" name="leave_type" value="Sick Leave">
+                    <label for="sick_leave">Sick Leave</label> <br class="d-md-none">
+                    <input type="radio" id="other_leave" name="leave_type" value="Others">
+                    <label for="other_leave">Others</label>
+                </div>
+                <div class="col-6 leave-type">
+                    <h6>Day Type</h6>
+                    <input type="radio" id="full" name="day_type" value="Full Day">
+                    <label for="full">Full Day</label> <br class="d-md-none">
+                    <input type="radio" id="first_half" name="day_type" value="First Half">
+                    <label for="first_half">First Half</label> <br class="d-md-none">
+                    <input type="radio" id="second_half" name="day_type" value="Second Half">
+                    <label for="second_half">Second Half</label>
+                </div>
+                <div class="col leave-date mt-3">
+                    <label for="leave-from">
+                        <h6>From</h6>
+                    </label> <br>
+                    <input type="date" id="leave-from" name="leave-from">
+                </div>
+                <div class="col leave-date mt-3">
+                    <label for="leave-from">
+                        <h6>To</h6>
+                    </label> <br>
+                    <input type="date" id="leave-from" name="leave-from">
+                </div>
+                <div class="col-12 leave-reason mt-3">
+                    <label for="leave-reason">
+                        <h6>Reason</h6>
+                    </label> <br>
+                    <textarea name="leave-reason" id="leave-reason" placeholder="Type here leave reason"></textarea>
+                </div>
+                <div class="col mt-3">
+                    <button type="Submit" class="btn"> Apply Leave</button>
+                    <button class="btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row mt-4 mt-lg-5">
+            <h4>Leave History </h4>
+            <div class="leave-history mt-3 px-3 px-md-5" style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Leave Type</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Day Time</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Annual Leave</td>
+                        <td>19 Feb 2020</td>
+                        <td>19 Feb 2020</td>
+                        <td>Full</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sick Leave</td>
+                        <td>19 Mar 2020</td>
+                        <td>19 Mar 2020</td>
+                        <td>Full</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Annual Leave</td>
+                        <td>19 Apr 2020</td>
+                        <td>19 Apr 2020</td>
+                        <td>Full</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sick Leave</td>
+                        <td>19 May 2020</td>
+                        <td>19 May 2020</td>
+                        <td>Full</td>
+                        <td>Approved</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="empty"></div>
 
     </section>
 
