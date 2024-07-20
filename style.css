@@ -274,6 +274,10 @@ body {
   margin-top: 5px;
 }
 
+.empty {
+  height: 15vh;
+}
+
 /* ------------------------ Dashboard ----------------------- */
 
 .dashboard-recents div table {
@@ -477,9 +481,6 @@ body {
     font-size: 1.3rem;
   }
 
-  .empty {
-    height: 30vh;
-  }
   /*----------------------- Leave ------------------ */
 
   .leave-type label {
