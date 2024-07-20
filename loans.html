@@ -131,22 +131,103 @@
         </div>
     </div>
 
-    <!-- Dashboard -->
+    <!-- Loans -->
 
     <section class="dashboard-section">
 
         <header>
             <div>
-                <h1 class="welcome-text" >Loa<span>ns</span></h1>
+                <h1 class="welcome-text">Loa<span>ns</span></h1>
             </div>
             <div class="header-btns">
                 <a href=""><i class='bx bx-notification'></i></a>
                 <a href=""><i class='bx bx-user-circle'></i></a>
             </div>
         </header>
-
+        <div class="row g-3 g-md-4">
+            <div class="col col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Loans</h5>
+                        <p class="card-text">$5000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Remaining Balance</h5>
+                        <p class="card-text">$2000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col12 col-md-4 dashboard-cols">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Repayment Schedule</h5>
+                        <p class="card-text">Monthly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mt-lg-5">
+            <div class="col-12 col-lg-6">
+                <h4>Apply for Loan</h4>
+                <form action="" class="reimbursement-form m-lg-3">
+                    <label for="loan-type">
+                        <h6>Loan Type</h6>
+                    </label> <br>
+                    <input type="text" id="loan-type" name="loan-type"
+                        placeholder="Enter Loan Type"> <br>
+                    <label for="reimbursement-amount">
+                        <h6>Amount</h6>
+                    </label> <br>
+                    <input type="text" id="loan-amount" name="loan-amount" placeholder="Enter Amount">
+                    <br>
+                    <button type="submit" class="btn mt-3">Apply</button>
+                    <button class="btn mt-3">Cancel</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <h4>Recents</h4>
+                <div class="leave-history mt-3" style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Payment Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>8 May 2024</td>
+                            <td>$200</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>8 May 2024</td>
+                            <td>$200</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>8 May 2024</td>
+                            <td>$200</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>8 May 2024</td>
+                            <td>$200</td>
+                            <td>Approved</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="empty"></div>
     </section>
-
     <!-- Scripts -->
 
     <script src="script.js"></script>

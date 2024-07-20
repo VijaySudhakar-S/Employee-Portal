@@ -378,9 +378,61 @@ body {
   font-weight: 550;
 }
 
-.leave-history tr:nth-child(even) {
+.leave-history tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
+
+/* ---------------------- Reimbursement -------- */
+
+.reimbursement-form {
+  background-color: var(--verylightgreen);
+  padding: 20px;
+}
+
+.reimbursement-form label {
+  margin-right: 30px;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.reimbursement-form input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+#reimbursement-file::file-selector-button {
+  background-color: white;
+  color: var(--darkgreen);
+  border: 1px dotted gray;
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+#reimbursement-file::file-selector-button:hover{
+  background-color: #f3f4f6;
+}
+
+#reimbursement-file::file-selector-button:active{
+  background-color: var(--darkgreen);
+  color: white;
+}
+
+.reimbursement-form button , .reimbursement-form button:last-child:hover {
+  background-color: var(--darkgreen);
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+}
+
+.reimbursement-form button:hover , .reimbursement-form button:last-child{
+  color: var(--darkgreen);
+  background-color: white;
+  border: 1px solid var(--darkgreen);
+}
+
 /* -------------------- Mobile and Tablet View ----------------------- */
 
 @media screen and (max-width: 992px) {
