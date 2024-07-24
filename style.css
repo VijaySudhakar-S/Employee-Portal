@@ -2,7 +2,7 @@
 
 :root {
   --green: #0ac30a;
-  --lightgreen: #0ac30a37;
+  --lightgreen: #0ac30a2b;
   --verylightgreen: #aad2aa17;
   --darkgreen: #088738;
   --blue: #037eff;
@@ -382,6 +382,102 @@ body {
   background-color: #f2f2f2;
 }
 
+/* ---------------------- Payroll -------- */
+
+.in-main-heads {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.in-main-heads:first-child {
+  border-right: 1px solid gray;
+}
+
+.in-main-head {
+  padding: 15px 20px;
+}
+
+.in-main-cont:nth-child(2) {
+  border-left: 1px solid gray;
+}
+
+.in-main-cont-left {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.in-main-head span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.in-main-head button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: white;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.in-main-head button:nth-child(2) {
+  background-color: white;
+  color: var(--darkgreen);
+  border: 1px solid var(--darkgreen);
+}
+
+.in-main-head button:nth-child(3) {
+  background-color: white;
+  color: var(--darkgreen);
+  margin-right: 0px;
+}
+
+.in-approve {
+  font-size: 0.9rem !important;
+}
+
+.each-in-member {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.in-name-amt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.in-num-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.in-name {
+  font-size: 1.1rem;
+}
+
+.in-num {
+  color: var(--blue);
+  margin-right: 8px;
+}
+
+.in-date{
+  color: gray;
+}
+
+.in-sent {
+  color: var(--darkgreen);
+}
+
 /* ---------------------- Reimbursement -------- */
 
 .reimbursement-form {
@@ -410,16 +506,17 @@ body {
   padding: 5px 10px;
 }
 
-#reimbursement-file::file-selector-button:hover{
+#reimbursement-file::file-selector-button:hover {
   background-color: #f3f4f6;
 }
 
-#reimbursement-file::file-selector-button:active{
+#reimbursement-file::file-selector-button:active {
   background-color: var(--darkgreen);
   color: white;
 }
 
-.reimbursement-form button , .reimbursement-form button:last-child:hover {
+.reimbursement-form button,
+.reimbursement-form button:last-child:hover {
   background-color: var(--darkgreen);
   color: white;
   margin-top: 10px;
@@ -427,7 +524,8 @@ body {
   border: 1px solid transparent;
 }
 
-.reimbursement-form button:hover , .reimbursement-form button:last-child{
+.reimbursement-form button:hover,
+.reimbursement-form button:last-child {
   color: var(--darkgreen);
   background-color: white;
   border: 1px solid var(--darkgreen);
@@ -537,5 +635,11 @@ body {
 
   .leave-type label {
     margin-right: 0px;
+  }
+
+  /* ---------------------- Payroll -------- */
+
+  .in-main-heads {
+    border-bottom: 0;
   }
 }
