@@ -497,17 +497,14 @@ body {
 }
 
 table.tablestyle_inner tr td {
-  line-height: 40px;
-  border: 1px solid gray;
+  line-height: 50px;
   padding: 0 10px;
 }
 
 .tablestyle_inner tr td:first-child {
   font-weight: 500;
 }
-.tablestyle_inner tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
+
 .tablestyle_inner a {
   text-decoration: none;
 }
