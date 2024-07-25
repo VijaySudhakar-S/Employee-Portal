@@ -417,8 +417,8 @@ body {
 
 .in-main-head button {
   border: none;
-  padding: 5px 10px;
-  font-size: 1rem;
+  padding: 4px 10px;
+  font-size: .8rem;
   border-radius: 5px;
   background-color: var(--darkgreen);
   color: white;
@@ -436,6 +436,8 @@ body {
   background-color: white;
   color: var(--darkgreen);
   margin-right: 0px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .in-approve {

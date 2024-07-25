@@ -178,7 +178,7 @@
 
 
         <div class="row">
-            <div class="col-12 col-lg-4 in-main-heads">
+            <div class="col-12 col-lg-4 in-main-heads in-main-head-left ">
                 <div class="d-flex justify-content-between align-items-center in-main-head">
                     <span>All Invoices</span>
                     <span>
@@ -186,12 +186,12 @@
                     </span>
                 </div>
             </div>
-            <div class="col-12 col-lg-8 in-main-heads">
-                <div class="in-main-head d-none d-lg-block">
+            <div class="col-12 col-lg-8 in-main-heads in-main-head-right d-none d-lg-block">
+                <div class="in-main-head">
                     <div class="d-flex justify-content-between align-items-center">
                         <span>INV-000181</span>
-                        <span class="in-approve">Pending Approval</span>
-                        <span>🖨️</span>
+                        <span class="in-approve d-none d-lg-block">Pending Approval</span>
+                        <span class="d-none d-lg-block">🖨️</span>
                         <span>
                             <button>Approve</button>
                             <button>More</button>
@@ -267,7 +267,7 @@
                 <center>
                     <table class="mt-4" width="100%" cellpadding="2" cellspacing="0">
                         <tbody>
-                            <tr valign="top">
+                            <tr valign="top" class="d-flex flex-column flex-lg-row">
                                 <td>
                                     <table class="tablestyle_inner">
                                         <tbody>
@@ -290,8 +290,7 @@
                                             <tr>
                                                 <td class="label">Employee Name:</td>
                                                 <td><a data-classes="half_width popup_height7"
-                                                        href="https://erp.tabook.life/HRM/view/view_employee.php?empl_id=3&amp;popup=yes&amp;no_menu=1"
-                                                        data-title="" onclick="open_modal(this); return false;">Jothi
+                                                        href="https://erp.tabook.life/HRM/view/view_employee.php?empl_id=3&amp;popup=yes&amp;no_menu=1">Jothi
                                                         Periyasamy</a>
                                                 </td>
                                             </tr>
@@ -317,14 +316,11 @@
                                         value="002/2024">
                                 </td>
                                 <td>
-                                    <table class="tablestyle_inner ms-3">
+                                    <table class="tablestyle_inner ms-lg-3">
                                         <tbody>
                                             <tr>
                                                 <td class="label">Month of Payslip:</td>
-                                                <td><a onclick="open_modal(this); return false;"
-                                                        data-classes="half_width popup_height9"
-                                                        href="../../HRM/inquires/attendance_inquiry.php?month=6&amp;year=5&amp;selected_id=1&amp;empl_id=3&amp;no_menu=1">
-                                                        June</a></td>
+                                                <td><a>June</a></td>
                                             </tr>
                                             <tr>
                                                 <td class="label">Currency:</td>
@@ -340,9 +336,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="label">Grade:</td>
-                                                <td><a onclick="open_modal(this); return false;"
-                                                        data-classes="popup2_width popup_height5"
-                                                        href="../../HRM/manage/allowances.php?grade_id=2&amp;no_menu=1">B</a>
+                                                <td><a>B</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -378,7 +372,7 @@
                         <center>
                             <table class="tablestyle " width="100%" cellpadding="2" cellspacing="0">
                                 <tbody>
-                                    <tr valign="top">
+                                    <tr valign="top" class="d-flex flex-column flex-lg-row">
                                         <td>
                                             <table class="tablestyle_inner">
                                                 <tbody>
@@ -452,7 +446,7 @@
                                                 name="ot_earnings" value="0">
                                         </td>
                                         <td>
-                                            <table class="tablestyle_inner ms-3">
+                                            <table class="tablestyle_inner ms-lg-3">
                                                 <tbody>
                                                     <tr>
                                                         <td colspan="2" class="tableheader">Deduction</td>
@@ -498,6 +492,25 @@
     </section>
 
     <!-- Scripts -->
+
+    <script>
+        document.querySelectorAll('.each-in-member').forEach(function (element) {
+            element.addEventListener('click', function () {
+                var leftDivHead = document.querySelector('.in-main-head-left');
+                var rightDivHead = document.querySelector('.in-main-head-right');
+                var leftDivCont = document.querySelector('.in-main-cont-left');
+                var rightDivCont = document.querySelector('.in-main-cont-rigth');
+
+                // Add class to leftDiv
+                leftDivHead.classList.add('d-none', 'd-lg-block');
+                leftDivCont.classList.add('d-none', 'd-lg-block');
+
+                // Remove class from rightDiv
+                rightDivHead.classList.remove('d-none', 'd-lg-block');
+                rightDivCont.classList.remove('d-none', 'd-lg-block');
+            });
+        });
+    </script>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
