@@ -260,8 +260,252 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-8 in-main-cont in-main-cont-rigth d-none d-lg-block">
+            <div class="col-12 col-lg-8 in-main-cont in-main-cont-rigth px-4 d-none d-lg-block">
+                <h6 class="employee-detail-heading">
+                    <center>Employee Details</center>
+                </h6>
+                <center>
+                    <table class="mt-4" width="100%" cellpadding="2" cellspacing="0">
+                        <tbody>
+                            <tr valign="top">
+                                <td>
+                                    <table class="tablestyle_inner">
+                                        <tbody>
+                                            <tr>
+                                                <td class="label">Created by:</td>
+                                                <td>Varadharaj V</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Created On:</td>
+                                                <td>24/07/2024 11:04 AM</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Reference:</td>
+                                                <td>002/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Employee No:</td>
+                                                <td>TA002</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Employee Name:</td>
+                                                <td><a data-classes="half_width popup_height7"
+                                                        href="https://erp.tabook.life/HRM/view/view_employee.php?empl_id=3&amp;popup=yes&amp;no_menu=1"
+                                                        data-title="" onclick="open_modal(this); return false;">Jothi
+                                                        Periyasamy</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Designation:</td>
+                                                <td>Designer</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Department:</td>
+                                                <td>Development</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Gross Salary:</td>
+                                                <td>30,000.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Absent Deduction</td>
+                                                <td>300.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <input type="hidden" name="grade_id" value="2"><input type="hidden" name="ref"
+                                        value="002/2024">
+                                </td>
+                                <td>
+                                    <table class="tablestyle_inner ms-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="label">Month of Payslip:</td>
+                                                <td><a onclick="open_modal(this); return false;"
+                                                        data-classes="half_width popup_height9"
+                                                        href="../../HRM/inquires/attendance_inquiry.php?month=6&amp;year=5&amp;selected_id=1&amp;empl_id=3&amp;no_menu=1">
+                                                        June</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Currency:</td>
+                                                <td>Indian Rupee</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Date:</td>
+                                                <td>01/06/2023 - 30/06/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Date of Payslip:</td>
+                                                <td>24/07/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Grade:</td>
+                                                <td><a onclick="open_modal(this); return false;"
+                                                        data-classes="popup2_width popup_height5"
+                                                        href="../../HRM/manage/allowances.php?grade_id=2&amp;no_menu=1">B</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Payable Hours:</td>
+                                                <td>00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">OT Hours:</td>
+                                                <td>00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Special OT Hours:</td>
+                                                <td>00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Days Worked:</td>
+                                                <td>0 days</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+                <div>
+                    <ul class="ajaxtabs my-4" rel="_tabs_div">
+                        <li>
+                            <button type="submit" name="tabs_pay_details" class="current"
+                                style="border-bottom: 2px solid var(--darkgreen); color: var(--darkgreen);">
+                                <span>Pay Details</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" name="tabs_Payment" class="ajaxbutton">
+                                <span>Allocations</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="submit" name="tabs_gl" class="ajaxbutton" accesskey="G">
+                                <span>General Ledger</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="spaceBox"></div><input type="hidden" name="_tabs_sel" value="pay_details">
+                    <div class="contentBox pay_details" id="_tabs_div">
+                        <center>
+                            <table class="tablestyle " width="100%" cellpadding="2" cellspacing="0">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td>
+                                            <table class="tablestyle_inner">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" class="tableheader">Earnings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Basic Salary</td>
+                                                        <td class="payslip_amount_row">14,850.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">HRA</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Accomodation Reimbursement</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Medical Reimbursement</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Petrol Reimbursement</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">OT Earnings:</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total
+                                                            Earnings:</td>
+                                                        <td style="text-align:right">
+                                                            14,850.000</td>
+                                                    </tr>
 
+                                                    <tr>
+                                                        <td colspan="2" class="tableheader">Benefits</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Gratuity</td>
+                                                        <td class="payslip_amount_row">713.940</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total
+                                                            Benefits:</td>
+                                                        <td style="text-align:right">
+                                                            713.940
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="tableheader">Employer Contribution</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Total
+                                                            Employer Contribution</td>
+                                                        <td style="text-align:right;">
+                                                            0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Overall CTC</td>
+                                                        <td style="text-align:right;">
+                                                            15,563.940</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <input type="hidden" name="payslip_id" value="1"><input type="hidden"
+                                                name="ot_earnings" value="0">
+                                        </td>
+                                        <td>
+                                            <table class="tablestyle_inner ms-3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" class="tableheader">Deduction</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Loan</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Professional Tax</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Advance Salary:</td>
+                                                        <td class="payslip_amount_row">0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Deductions
+                                                        </td>
+                                                        <td style="text-align:right;">
+                                                            0.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Net Salary
+                                                            Payable:
+                                                        </td>
+                                                        <td style="text-align:right; ">
+                                                            15,563.940</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                    <div style="clear:both;"> </div>
+                </div>
             </div>
         </div>
 

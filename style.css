@@ -405,6 +405,11 @@ body {
   height: 80vh;
 }
 
+.in-main-cont-rigth {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
 .in-main-head span {
   font-size: 1.2rem;
   font-weight: 500;
@@ -442,6 +447,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-bottom: 2px solid rgb(241, 240, 240);
 }
 
 .in-name-amt {
@@ -470,7 +476,7 @@ body {
   margin-right: 8px;
 }
 
-.in-date{
+.in-date {
   color: gray;
 }
 
@@ -478,6 +484,76 @@ body {
   color: var(--darkgreen);
 }
 
+.viewer_topbar-wrapper {
+  margin-top: 40px !important;
+}
+
+.employee-detail-heading {
+  background-color: var(--lightgreen);
+  padding: 1px 0px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+table.tablestyle_inner tr td {
+  line-height: 40px;
+  border: 1px solid gray;
+  padding: 0 10px;
+}
+
+.tablestyle_inner tr td:first-child {
+  font-weight: 500;
+}
+.tablestyle_inner tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.tablestyle_inner a {
+  text-decoration: none;
+}
+.popup_menu_option {
+  float: right;
+}
+
+table.tablestyle_inner {
+  width: 100% !important;
+}
+
+center {
+  margin: 10px 0;
+}
+
+.payslip_amount_row {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.payslip_general_ledger table.tablestyle tr td {
+  width: auto;
+}
+
+.ajaxtabs li {
+  list-style-type: none;
+  display: inline;
+}
+
+.ajaxtabs li button {
+  border: 2px solid transparent;
+  background-color: transparent;
+  margin-right: 20px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  transition: 0.2s;
+}
+
+.ajaxtabs li button:hover {
+  border-bottom: 2px solid var(--darkgreen);
+  color: var(--darkgreen);
+}
+
+.tablestyle_inner .tableheader {
+  background-color: var(--lightgreen);
+}
 /* ---------------------- Reimbursement -------- */
 
 .reimbursement-form {
