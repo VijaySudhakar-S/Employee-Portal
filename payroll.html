@@ -182,20 +182,23 @@
                 <div class="d-flex justify-content-between align-items-center in-main-head">
                     <span>All Invoices</span>
                     <span>
-                        <button>+ New</button>
+                        <!-- <button>+ New</button> -->
                     </span>
                 </div>
             </div>
             <div class="col-12 col-lg-8 in-main-heads in-main-head-right d-none d-lg-block">
                 <div class="in-main-head">
                     <div class="d-flex justify-content-between align-items-center">
-                        <span>INV-000181</span>
-                        <span class="in-approve d-none d-lg-block">Pending Approval</span>
-                        <span class="d-none d-lg-block">🖨️</span>
+                        <div class="d-flex justify-content-center align-items-center ">
+                            <span class="payroll-back-btn d-lg-none">
+                                <a href="payroll.html"><iconify-icon icon="weui:back-filled"></iconify-icon></a>
+                            </span>
+                            <span>INV-000181</span>
+                        </div>
                         <span>
+                            <button>🖨️</button>
                             <button>Approve</button>
                             <button>More</button>
-                            <button>X</button>
                         </span>
                     </div>
                 </div>
@@ -203,6 +206,12 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-4 in-main-cont in-main-cont-left">
+                <div class="px-3">
+                    <div class="payroll-search px-3 d-flex align-items-center">
+                        <span><iconify-icon icon="icon-park-outline:search"></iconify-icon></span>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
                 <div class="each-in-member">
                     <div class="in-name-amt">
                         <span class="in-name">William Shakespeare</span>
@@ -488,6 +497,8 @@
                 </div>
             </div>
         </div>
+
+        <button class="payroll-plus-btn">+</button>
 
     </section>
     <div class="empty d-lg-none"></div>

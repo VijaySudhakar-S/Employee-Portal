@@ -50,11 +50,11 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  padding:30px;
+  padding: 30px;
   background-color: rgb(255, 255, 255);
   height: 500px;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.22);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
 }
 
 .log-right h3 {
@@ -497,6 +497,11 @@ body {
   font-weight: 500;
 }
 
+.in-main-head button:first-child {
+  background-color: transparent;
+  font-size: 1rem !important;
+}
+
 .in-main-head button {
   border: none;
   padding: 4px 10px;
@@ -508,26 +513,37 @@ body {
   border: 1px solid transparent;
 }
 
-.in-main-head button:nth-child(2) {
-  background-color: white;
-  color: var(--darkgreen);
-  border: 1px solid var(--darkgreen);
-}
-
 .in-main-head button:nth-child(3) {
   background-color: white;
   color: var(--darkgreen);
-  margin-right: 0px;
-  font-size: 1rem;
-  font-weight: 500;
+  border: 1px solid var(--darkgreen);
 }
 
 .in-approve {
   font-size: 0.9rem !important;
 }
 
+.payroll-search {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 3px;
+}
+.payroll-search span {
+  color: gray;
+  margin-right: 10px;
+}
+.payroll-search input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
 .each-in-member {
   padding: 15px 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -570,6 +586,13 @@ body {
 
 .viewer_topbar-wrapper {
   margin-top: 40px !important;
+}
+
+.payroll-back-btn a {
+  text-decoration: none;
+  color: var(--darkgreen);
+  font-size: 1.5rem;
+  margin-right: 20px;
 }
 
 .employee-detail-heading {
@@ -636,9 +659,24 @@ center {
   background-color: var(--lightgreen);
 }
 
-.pay-detail-td{
-  width: 100% ;
+.pay-detail-td {
+  width: 100%;
 }
+
+.payroll-plus-btn {
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: white;
+}
+
 /* ---------------------- Reimbursement -------- */
 
 .reimbursement-form {
@@ -650,11 +688,18 @@ center {
   margin-right: 30px;
   margin-top: 20px;
   font-size: 1rem;
+  font-weight: 300 !important ;
 }
 
 .reimbursement-form input {
   padding: 5px 10px;
   width: 100%;
+}
+
+#reimbursement-claim-type,
+#reimbursement-amount {
+  border: 1px solid rgba(128, 128, 128, 0.763);
+  border-radius: 2px;
 }
 
 #reimbursement-file::file-selector-button {
@@ -802,5 +847,10 @@ center {
 
   .in-main-heads {
     border-bottom: 0;
+  }
+  .payroll-plus-btn {
+    position: fixed;
+    bottom: 85px;
+    right: 30px;
   }
 }
