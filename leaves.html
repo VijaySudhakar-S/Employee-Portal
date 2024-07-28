@@ -18,7 +18,7 @@
 
     <!-- Desktop Side Bar -->
 
-    <div class="maxsidebar">
+    <div class="maxsidebar" id="maxsidebar">
         <div class="logo-details">
             <i class='bx bx-menu' id="btn"></i>
         </div>
@@ -78,7 +78,7 @@
                 </a>
                 <span class="tooltip">Tickets</span>
             </li>
-            <li class="profile">
+            <li class="profile" id="maxSidebarlogout">
 
                 <a href="#">
                     <i class='bx bx-log-out' id="log_out"></i>
@@ -132,15 +132,22 @@
 
     <!-- Leaves -->
 
-    <section class="dashboard-section">
+    <section class="dashboard-section" id="dashboard-section">
 
         <header>
             <div>
-                <h1 class="welcome-text">Leav<span>es</span></h1>
+                <h1 class="welcome-text">Lea<span>ves</span></h1>
             </div>
             <div class="header-btns">
-                <a href=""><i class='bx bx-notification'></i></a>
-                <a href=""><i class='bx bx-user-circle'></i></a>
+                <button class="lang-dropdown" id="directionToggle">
+                    <span id="lang">Lang ▼</span>
+                    <div class="lang-dropdown-content">
+                        <p>English</p>
+                        <p>Arabic</p>
+                    </div>
+                </button>
+                <button><a href=""><i class='bx bx-notification'></i></a></button>
+                <button><a href=""><i class='bx bx-user-circle'></i></a></button>
             </div>
         </header>
 
@@ -262,7 +269,7 @@
                         <td>Sick Leave</td>
                         <td>19 May 2020</td>
                         <td>19 May 2020</td>
-                        <td>Full</td>   
+                        <td>Full</td>
                         <td>Approved</td>
                     </tr>
                 </table>

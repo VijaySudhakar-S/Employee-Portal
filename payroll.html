@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 
     <!-- Desktop Side Bar -->
 
-    <div class="maxsidebar">
+    <div class="maxsidebar" id="maxsidebar">
         <div class="logo-details">
             <i class='bx bx-menu' id="btn"></i>
         </div>
@@ -78,7 +78,7 @@
                 </a>
                 <span class="tooltip">Tickets</span>
             </li>
-            <li class="profile">
+            <li class="profile" id="maxSidebarlogout">
 
                 <a href="#">
                     <i class='bx bx-log-out' id="log_out"></i>
@@ -112,14 +112,14 @@
                 </a>
             </li>
             <li>
-                <button class="d-lg-none dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false"
-                    style="color:#0ac30a;">
+                <button class="d-lg-none dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false">
                     <div><i class='bx bxs-chevron-up'></i></div>
                     <div><span class="">More</span></div>
                 </button>
                 <ul class="dropdown-menu dropup">
                     <li><a class="dropdown-item" href="payroll.html" style="color:#0ac30a;"><i
-                                class='bx bx-credit-card-alt'></i>Payroll</a></li>
+                                class='bx bx-credit-card-alt'></i>Payroll</a>
+                    </li>
                     <li><a class="dropdown-item" href="reimbursement.html"><i class='bx bx-wallet'></i>Reimbursement</a>
                     </li>
                     <li><a class="dropdown-item" href="loans.html"><i class='bx bx-donate-heart'></i>Loans</a></li>
@@ -133,15 +133,22 @@
 
     <!-- Payroll -->
 
-    <section class="dashboard-section">
+    <section class="dashboard-section" id="dashboard-section">
 
         <header>
             <div>
-                <h1 class="welcome-text">Pay<span>Roll</span></h1>
+                <h1 class="welcome-text">Pay<span>roll</span></h1>
             </div>
             <div class="header-btns">
-                <a href=""><i class='bx bx-notification'></i></a>
-                <a href=""><i class='bx bx-user-circle'></i></a>
+                <button class="lang-dropdown" id="directionToggle">
+                    <span id="lang">Lang ▼</span>
+                    <div class="lang-dropdown-content">
+                        <p>English</p>
+                        <p>Arabic</p>
+                    </div>
+                </button>
+                <button><a href=""><i class='bx bx-notification'></i></a></button>
+                <button><a href=""><i class='bx bx-user-circle'></i></a></button>
             </div>
         </header>
 
@@ -276,7 +283,7 @@
                 <center>
                     <table class="mt-4" width="100%" cellpadding="2" cellspacing="0">
                         <tbody>
-                            <tr valign="top" class="d-flex flex-column flex-lg-row">
+                            <tr valign="top" class="d-flex flex-column flex-lg-row justify-content-between">
                                 <td>
                                     <table class="tablestyle_inner">
                                         <tbody>
@@ -455,7 +462,7 @@
                                                 name="ot_earnings" value="0">
                                         </td>
                                         <td class="pay-detail-td">
-                                            <table class="tablestyle_inner Deduction ms-lg-3">
+                                            <table class="tablestyle_inner Deduction mx-lg-3">
                                                 <tbody>
                                                     <tr>
                                                         <td colspan="2" class="tableheader">Deduction</td>
@@ -498,7 +505,7 @@
             </div>
         </div>
 
-        <button class="payroll-plus-btn">+</button>
+        <button class="payroll-plus-btn" id="payroll-plus-btn">+</button>
 
     </section>
     <div class="empty d-lg-none"></div>

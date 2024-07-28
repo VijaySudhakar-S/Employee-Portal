@@ -18,7 +18,7 @@
 
     <!-- Desktop Side Bar -->
 
-    <div class="maxsidebar">
+    <div class="maxsidebar" id="maxsidebar">
         <div class="logo-details">
             <i class='bx bx-menu' id="btn"></i>
         </div>
@@ -78,7 +78,7 @@
                 </a>
                 <span class="tooltip">Tickets</span>
             </li>
-            <li class="profile">
+            <li class="profile" id="maxSidebarlogout">
 
                 <a href="#">
                     <i class='bx bx-log-out' id="log_out"></i>
@@ -112,17 +112,18 @@
                 </a>
             </li>
             <li>
-                <button class="d-lg-none dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="d-lg-none dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="color:#0ac30a;">
                     <div><i class='bx bxs-chevron-up'></i></div>
                     <div><span class="">More</span></div>
                 </button>
                 <ul class="dropdown-menu dropup">
                     <li><a class="dropdown-item" href="payroll.html"><i class='bx bx-credit-card-alt'></i>Payroll</a>
                     </li>
-                    <li><a class="dropdown-item" href="reimbursement.html"><i class='bx bx-wallet'></i>Reimbursement</a>
+                    <li><a class="dropdown-item" href="reimbursement.html" ><i
+                                class='bx bx-wallet'></i>Reimbursement</a>
                     </li>
-                    <li><a class="dropdown-item" href="loans.html" style="color:#0ac30a;"><i
-                                class='bx bx-donate-heart'></i>Loans</a></li>
+                    <li><a class="dropdown-item" href="loans.html" style="color:#0ac30a;"><i class='bx bx-donate-heart'></i>Loans</a></li>
                     <li><a class="dropdown-item" href="tickets.html"><i><iconify-icon
                                     icon="f7:tickets"></iconify-icon></i>Tickets</a></li>
                     <li><a class="dropdown-item" href="#"><i class='bx bx-log-out' id="log_out"></i>Logout</a></li>
@@ -131,20 +132,27 @@
         </div>
     </div>
 
-    <!-- Loans -->
+    <!-- Reimbursement -->
 
-    <section class="dashboard-section">
+    <section class="dashboard-section" id="dashboard-section">
 
         <header>
             <div>
                 <h1 class="welcome-text">Loa<span>ns</span></h1>
             </div>
             <div class="header-btns">
-                <a href=""><i class='bx bx-notification'></i></a>
-                <a href=""><i class='bx bx-user-circle'></i></a>
+                <button class="lang-dropdown" id="directionToggle">
+                    <span id="lang">Lang ▼</span>
+                    <div class="lang-dropdown-content">
+                        <p>English</p>
+                        <p>Arabic</p>
+                    </div>
+                </button>
+                <button><a href=""><i class='bx bx-notification'></i></a></button>
+                <button><a href=""><i class='bx bx-user-circle'></i></a></button>
             </div>
         </header>
-        <div class="row g-3 g-md-4">
+        <div class="row mt-3  g-3 g-md-4">
             <div class="col col-md-4 dashboard-cols">
                 <div class="card h-100">
                     <div class="card-body">
