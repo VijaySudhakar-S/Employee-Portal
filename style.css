@@ -26,7 +26,7 @@ body {
 }
 
 .log-left {
-  background: url(Images/login.jpg) rgb(8, 135, 57);
+  background: url(Images/login.jpg) rgba(8, 135, 57, 0.79);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: right;
@@ -634,6 +634,10 @@ center {
 
 .tablestyle_inner .tableheader {
   background-color: var(--lightgreen);
+}
+
+.pay-detail-td{
+  width: 100% ;
 }
 /* ---------------------- Reimbursement -------- */
 
