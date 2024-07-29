@@ -16,7 +16,8 @@ function menuBtnChange() {
 
 // =========  LTR to RTL =============
 
-const directionToggle = document.getElementById("directionToggle");
+const directionrlt = document.getElementById("directionRlt");
+const directionLtr = document.getElementById("directionLtr");
 const body = document.body;
 const maxSidebar = document.getElementById("maxsidebar");
 const dashboardSection = document.getElementById("dashboard-section");
@@ -24,13 +25,25 @@ const maxSidebarlogout = document.getElementById("maxSidebarlogout");
 const tooltips = document.querySelectorAll(".tooltip");
 const payrollPlusBtn = document.getElementById("payroll-plus-btn");
 
-directionToggle.addEventListener("click", () => {
-  body.classList.toggle("rtl");
-  maxSidebar.classList.toggle("rlt");
-  dashboardSection.classList.toggle("rlt");
-  maxSidebarlogout.classList.toggle("rlt");
-  payrollPlusBtn.classList.toggle("rlt");
+directionrlt.addEventListener("click", () => {
+  body.classList.add("rtl");
+  maxSidebar.classList.add("rlt");
+  dashboardSection.classList.add("rlt");
+  maxSidebarlogout.classList.add("rlt");
+  payrollPlusBtn.classList.add("rlt");
   tooltips.forEach((tooltip) => {
-    tooltip.classList.toggle("rlt");
+    tooltip.classList.add("rlt");
   });
 });
+
+directionLtr.addEventListener("click", () => {
+  body.classList.remove("rtl");
+  maxSidebar.classList.remove("rlt");
+  dashboardSection.classList.remove("rlt");
+  maxSidebarlogout.classList.remove("rlt");
+  payrollPlusBtn.classList.remove("rlt");
+  tooltips.forEach((tooltip) => {
+    tooltip.classList.remove("rlt");
+  });
+});
+
