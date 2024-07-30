@@ -6,6 +6,7 @@
   --verylightgreen: #aad2aa17;
   --darkgreen: #088738;
   --blue: #037eff;
+  --black: black;
 }
 * {
   margin: 0;
@@ -342,7 +343,7 @@ body.rtl {
   color: var(--blue);
 }
 
-.header-btns button{
+.header-btns button {
   border: none;
   background-color: transparent;
 }
@@ -737,7 +738,7 @@ center {
   color: white;
 }
 
-.payroll-plus-btn.rlt{
+.payroll-plus-btn.rlt {
   right: auto;
   left: 50px;
 }
@@ -800,6 +801,68 @@ center {
   color: var(--darkgreen);
   background-color: white;
   border: 1px solid var(--darkgreen);
+}
+
+/* ---------------------- Profile -------------- */
+
+.pro-img {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 5px;
+  background-color: var(--verylightgreen);
+}
+
+.pro-img img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.pro-img h5{
+  font-weight: 600;
+}
+
+.pro-img button {
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  background-color: var(--darkgreen);
+  color: white;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.pro-img button:hover {
+  border: 1px solid var(--darkgreen);
+  background-color: transparent;
+  color: var(--darkgreen);
+}
+
+.profile-names {
+  line-height: 32px;
+}
+
+.profile-names span {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.profile-names span:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+
+.per-details table tr td{
+  padding: 10px 40px;
+}
+
+.per-details table tr th {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--darkgreen);
+}
+
+.per-details table tr td{
+  font-weight:500 ;
 }
 
 /* -------------------- Mobile and Tablet View ----------------------- */
