@@ -16,7 +16,7 @@ function menuBtnChange() {
 
 // =========  LTR to RTL =============
 
-const directionrlt = document.getElementById("directionRlt");
+const directionRlt = document.getElementById("directionRlt");
 const directionLtr = document.getElementById("directionLtr");
 const body = document.body;
 const maxSidebar = document.getElementById("maxsidebar");
@@ -25,7 +25,7 @@ const maxSidebarlogout = document.getElementById("maxSidebarlogout");
 const tooltips = document.querySelectorAll(".tooltip");
 const payrollPlusBtn = document.getElementById("payroll-plus-btn");
 
-directionrlt.addEventListener("click", () => {
+directionRlt.addEventListener("click", () => {
   body.classList.add("rtl");
   maxSidebar.classList.add("rlt");
   dashboardSection.classList.add("rlt");

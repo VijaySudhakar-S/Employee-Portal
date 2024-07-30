@@ -120,10 +120,10 @@
                 <ul class="dropdown-menu dropup">
                     <li><a class="dropdown-item" href="payroll.html"><i class='bx bx-credit-card-alt'></i>Payroll</a>
                     </li>
-                    <li><a class="dropdown-item" href="reimbursement.html" ><i
-                                class='bx bx-wallet'></i>Reimbursement</a>
+                    <li><a class="dropdown-item" href="reimbursement.html"><i class='bx bx-wallet'></i>Reimbursement</a>
                     </li>
-                    <li><a class="dropdown-item" href="loans.html" style="color:#0ac30a;"><i class='bx bx-donate-heart'></i>Loans</a></li>
+                    <li><a class="dropdown-item" href="loans.html" style="color:#0ac30a;"><i
+                                class='bx bx-donate-heart'></i>Loans</a></li>
                     <li><a class="dropdown-item" href="tickets.html"><i><iconify-icon
                                     icon="f7:tickets"></iconify-icon></i>Tickets</a></li>
                     <li><a class="dropdown-item" href="#"><i class='bx bx-log-out' id="log_out"></i>Logout</a></li>
@@ -144,8 +144,8 @@
                 <button class="lang-dropdown" id="directionToggle">
                     <span id="lang">Lang ▼</span>
                     <div class="lang-dropdown-content">
-                        <p>English</p>
-                        <p>Arabic</p>
+                        <p id="directionLtr">English</p>
+                        <p id="directionRlt">Arabic</p>
                     </div>
                 </button>
                 <button><a href=""><i class='bx bx-notification'></i></a></button>
@@ -185,8 +185,7 @@
                     <label for="loan-type">
                         <h6>Loan Type</h6>
                     </label> <br>
-                    <input type="text" id="loan-type" name="loan-type"
-                        placeholder="Enter Loan Type"> <br>
+                    <input type="text" id="loan-type" name="loan-type" placeholder="Enter Loan Type"> <br>
                     <label for="reimbursement-amount">
                         <h6>Amount</h6>
                     </label> <br>
