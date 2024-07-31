@@ -164,16 +164,14 @@
                         <span>Perlis, Malaysia </span>
                     </div>
                 </div>
-                <div>
-                    <button>Edit</button>
-                </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
+
+            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="personal-details">
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Personal Details</h5>
                     <div>
-                        <button>Edit</button>
+                        <button onclick="editPersonalDetailsBtn()">Edit</button>
                     </div>
                 </div>
                 <div class="mt-3 per-details">
@@ -223,11 +221,75 @@
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
+            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="edit-personal-details">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>Personal Details</h5>
+                    <div>
+                        <button onclick="savePersonalDetailsBtn()">Save</button>
+                    </div>
+                </div>
+                <div class="mt-3 per-details">
+                    <table class="d-md-flex">
+                        <tbody class="me-lg-5">
+                            <tr>
+                                <th>Employee Name</th>
+                                <td><input type="text" placeholder="Enter Name"></td>
+                            </tr>
+                            <tr>
+                                <th>Employee Id</th>
+                                <td><input type="text" placeholder="Enter ID"></td>
+                            </tr>
+                            <tr>
+                                <th>Mobile Phone</th>
+                                <td><input type="number" placeholder="Enter Mobile Number"></td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td><input type="mail" placeholder="Enter Email"></td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td><select name="Gender" id="Gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Others">Others</option>
+                                    </select></td>
+                            </tr>
+
+                        </tbody>
+                        <tbody class="ms-lg-5">
+                            <tr>
+                                <th>Date of Birth</th>
+                                <td><input type="date"></td>
+                            </tr>
+                            <tr>
+                                <th>Marital Status</th>
+                                <td><select name="Marital-Status" id="Marital-Status">
+                                        <option value="Male">Married</option>
+                                        <option value="Female">Unmarried</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <th>Status</th>
+                                <td><select name="Status" id="Status">
+                                        <option value="Active">Active</option>
+                                        <option value="Female">Inactive</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <th>Age</th>
+                                <td><input type="text" placeholder="Enter Age"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="profile-address">
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Address</h5>
                     <div>
-                        <button>Edit</button>
+                        <button onclick="editAddressBtn()">Edit</button>
                     </div>
                 </div>
                 <div class="mt-3 per-details">
@@ -235,15 +297,42 @@
                         <tbody class="me-lg-5">
                             <tr>
                                 <th>State</th>
-                                <td>Mr. Keny Kayal</td>
+                                <td>Perlis</td>
                             </tr>
                             <tr>
                                 <th>Country</th>
-                                <td>001/2024</td>
+                                <td>Malaysia</td>
                             </tr>
                             <tr>
                                 <th>Post/Zip Code</th>
                                 <td>434534</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="edit-profile-address">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>Address</h5>
+                    <div>
+                        <button onclick="saveAddressBtn()">Save</button>
+                    </div>
+                </div>
+                <div class="mt-3 per-details">
+                    <table class="d-md-flex">
+                        <tbody class="me-lg-5">
+                            <tr>
+                                <th>State</th>
+                                <td><input type="text" placeholder="Enter State"></td>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <td><input type="text" placeholder="Enter Country"></td>
+                            </tr>
+                            <tr>
+                                <th>Post/Zip Code</th>
+                                <td><input type="text" placeholder="Enter Zip Code"></td>
                             </tr>
                         </tbody>
                     </table>
