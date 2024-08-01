@@ -857,29 +857,28 @@ center {
   color: var(--black);
 }
 
-.per-details label{
+.per-details label {
   color: var(--darkgreen);
   margin-bottom: 6px;
 }
 
-.per-details input{
+.per-details input {
   border: none;
   background-color: transparent;
   outline: none;
   margin-bottom: 20px;
   font-weight: 500;
+  width: 100%;
 }
 
-#editPersonalDetailsBtn{
+#savePersonalDetailsBtn {
   display: none;
+  transition: 0.2s;
 }
 
-#editPersonalDetailsBtn{
+#saveAddressBtn {
   display: none;
-}
-
-#saveAddressBtn{
-  display: none;
+  transition: 0.2s;
 }
 
 /* -------------------- Mobile and Tablet View ----------------------- */

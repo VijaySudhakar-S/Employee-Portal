@@ -52,19 +52,47 @@ directionLtr.addEventListener("click", () => {
 function editPersonalDetailsBtn() {
   document.getElementById("editPersonalDetailsBtn").style.display = "none";
   document.getElementById("savePersonalDetailsBtn").style.display = "block";
+
+  var inputs = document.querySelectorAll("#personal-details input");
+  inputs.forEach(function (input) {
+    input.style.border = "1px solid gray";
+    input.style.padding = "5px 10px";
+    input.style.width = "90%";
+    input.style.borderRadius = "2px";
+  });
 }
 
 function savePersonalDetailsBtn() {
   document.getElementById("editPersonalDetailsBtn").style.display = "block";
   document.getElementById("savePersonalDetailsBtn").style.display = "none";
+
+  var inputs = document.querySelectorAll("#personal-details input");
+  inputs.forEach(function (input) {
+    input.style.border = "0px";
+    input.style.padding = "5px 10px";
+    input.style.width = "90%";
+  });
 }
 
 function editAddressBtn() {
   document.getElementById("editAddressBtn").style.display = "none";
   document.getElementById("saveAddressBtn").style.display = "block";
+  var inputs = document.querySelectorAll("#profile-address input");
+  inputs.forEach(function (input) {
+    input.style.border = "1px solid gray";
+    input.style.padding = "5px 10px";
+    input.style.width = "90%";
+    input.style.borderRadius = "2px";
+  });
 }
 
 function saveAddressBtn() {
   document.getElementById("editAddressBtn").style.display = "block";
   document.getElementById("saveAddressBtn").style.display = "none";
+  var inputs = document.querySelectorAll("#profile-address input");
+  inputs.forEach(function (input) {
+    input.style.border = "0px";
+    input.style.padding = "5px 10px";
+    input.style.width = "90%";
+  });
 }
