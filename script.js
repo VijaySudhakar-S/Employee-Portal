@@ -50,21 +50,21 @@ directionLtr.addEventListener("click", () => {
 // ============  Profile =============
 
 function editPersonalDetailsBtn() {
-  document.getElementById("personal-details").style.display = "none";
-  document.getElementById("edit-personal-details").style.display = "block";
+  document.getElementById("editPersonalDetailsBtn").style.display = "none";
+  document.getElementById("savePersonalDetailsBtn").style.display = "block";
 }
 
 function savePersonalDetailsBtn() {
-  document.getElementById("personal-details").style.display = "block";
-  document.getElementById("edit-personal-details").style.display = "none";
+  document.getElementById("editPersonalDetailsBtn").style.display = "block";
+  document.getElementById("savePersonalDetailsBtn").style.display = "none";
 }
 
 function editAddressBtn() {
-  document.getElementById("profile-address").style.display = "none";
-  document.getElementById("edit-profile-address").style.display = "block";
+  document.getElementById("editAddressBtn").style.display = "none";
+  document.getElementById("saveAddressBtn").style.display = "block";
 }
 
 function saveAddressBtn() {
-  document.getElementById("profile-address").style.display = "block";
-  document.getElementById("edit-profile-address").style.display = "none";
+  document.getElementById("editAddressBtn").style.display = "block";
+  document.getElementById("saveAddressBtn").style.display = "none";
 }

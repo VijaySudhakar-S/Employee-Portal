@@ -84,7 +84,7 @@ body.rtl {
 
 .log-right .login-btn {
   background-color: var(--darkgreen);
-  border: none;
+  border: 1px solid transparent;
   width: 100%;
   padding: 10px 10px;
   border-radius: 3px;
@@ -93,6 +93,13 @@ body.rtl {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: transparent;
+  color: var(--darkgreen);
+  border: 1px solid var(--darkgreen);
 }
 
 .log-right .forgot-pass {
@@ -850,57 +857,30 @@ center {
   color: var(--black);
 }
 
-.per-details table tr td {
-  padding: 10px 40px;
-}
-
-.per-details table tr th {
-  font-size: 1rem;
-  font-weight: 400;
+.per-details label{
   color: var(--darkgreen);
+  margin-bottom: 6px;
 }
 
-.per-details table tr td {
+.per-details input{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 
-.profile-picture {
-  width: 100px;
-  height: 100px;
-  border: 2px dashed #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.file-uploader {
+#editPersonalDetailsBtn{
   display: none;
 }
 
-.upload-icon {
-  color: #999;
-}
-
-#edit-personal-details input , #edit-profile-address input {
-  width: 100%;
-  border: 1px solid gray;
-  padding: 3px 10px;
-  outline: none;
-  border-radius: 2px;
-}
-
-#edit-personal-details select {
-  width: 100%;
-  padding: 3px 10px;
-  border-radius: 2px;
-}
-
-#edit-personal-details , #edit-profile-address{
+#editPersonalDetailsBtn{
   display: none;
 }
 
-
+#saveAddressBtn{
+  display: none;
+}
 
 /* -------------------- Mobile and Tablet View ----------------------- */
 

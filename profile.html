@@ -171,117 +171,33 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Personal Details</h5>
                     <div>
-                        <button onclick="editPersonalDetailsBtn()">Edit</button>
+                        <button id="editPersonalDetailsBtn" onclick="editPersonalDetailsBtn()">Edit</button>
+                        <button id="savePersonalDetailsBtn" onclick="savePersonalDetailsBtn()">Save</button>
                     </div>
                 </div>
-                <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Employee Name</th>
-                                <td>Mr. Keny Kayal</td>
-                            </tr>
-                            <tr>
-                                <th>Employee Id</th>
-                                <td>001/2024</td>
-                            </tr>
-                            <tr>
-                                <th>Mobile Phone</th>
-                                <td>434534</td>
-                            </tr>
-                            <tr>
-                                <th>Email</th>
-                                <td>kenny@tamilacc.xyz</td>
-                            </tr>
-                            <tr>
-                                <th>Gender</th>
-                                <td>Male</td>
-                            </tr>
-
-                        </tbody>
-                        <tbody class="ms-lg-5">
-                            <tr>
-                                <th>Date of Birth</th>
-                                <td>02/05/1995</td>
-                            </tr>
-                            <tr>
-                                <th>Marital Status</th>
-                                <td>Married</td>
-                            </tr>
-                            <tr>
-                                <th>Status</th>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>29</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="edit-personal-details">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Personal Details</h5>
-                    <div>
-                        <button onclick="savePersonalDetailsBtn()">Save</button>
+                <div class="mt-3 per-details d-lg-flex">
+                    <div class="col-5">
+                        <label for="">Employee Name </label> <br>
+                        <input type="text" value="Mr. Keny Kayal"><br>
+                        <label for="">Employee Id</label> <br>
+                        <input type="text" value="001/2024"><br>
+                        <label for="">Mobile Phone</label> <br>
+                        <input type="text" value="434534"><br>
+                        <label for="">Email </label> <br>
+                        <input type="text" value="kenny@tamilacc.xyz"><br>
+                        <label for="">Gender</label> <br>
+                        <input type="text" value="Male">
                     </div>
-                </div>
-                <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Employee Name</th>
-                                <td><input type="text" placeholder="Enter Name"></td>
-                            </tr>
-                            <tr>
-                                <th>Employee Id</th>
-                                <td><input type="text" placeholder="Enter ID"></td>
-                            </tr>
-                            <tr>
-                                <th>Mobile Phone</th>
-                                <td><input type="number" placeholder="Enter Mobile Number"></td>
-                            </tr>
-                            <tr>
-                                <th>Email</th>
-                                <td><input type="mail" placeholder="Enter Email"></td>
-                            </tr>
-                            <tr>
-                                <th>Gender</th>
-                                <td><select name="Gender" id="Gender">
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Others">Others</option>
-                                    </select></td>
-                            </tr>
-
-                        </tbody>
-                        <tbody class="ms-lg-5">
-                            <tr>
-                                <th>Date of Birth</th>
-                                <td><input type="date"></td>
-                            </tr>
-                            <tr>
-                                <th>Marital Status</th>
-                                <td><select name="Marital-Status" id="Marital-Status">
-                                        <option value="Male">Married</option>
-                                        <option value="Female">Unmarried</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <th>Status</th>
-                                <td><select name="Status" id="Status">
-                                        <option value="Active">Active</option>
-                                        <option value="Female">Inactive</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td><input type="text" placeholder="Enter Age"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="col-5">
+                        <label for="">Date of Birth</label><br>
+                        <input type="text" value="02/05/1995"><br>
+                        <label for="">Marital Status</label><br>
+                        <input type="text" value="Married"><br>
+                        <label for="">Status</label> <br>
+                        <input type="text" value="Active"><br>
+                        <label for="">Age</label> <br>
+                        <input type="text" value="29"><br>
+                    </div>
                 </div>
             </div>
 
@@ -289,53 +205,17 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Address</h5>
                     <div>
-                        <button onclick="editAddressBtn()">Edit</button>
+                        <button id="editAddressBtn" onclick="editAddressBtn()">Edit</button>
+                        <button id="saveAddressBtn" onclick="saveAddressBtn()">Save</button>
                     </div>
                 </div>
                 <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>State</th>
-                                <td>Perlis</td>
-                            </tr>
-                            <tr>
-                                <th>Country</th>
-                                <td>Malaysia</td>
-                            </tr>
-                            <tr>
-                                <th>Post/Zip Code</th>
-                                <td>434534</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="edit-profile-address">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Address</h5>
-                    <div>
-                        <button onclick="saveAddressBtn()">Save</button>
-                    </div>
-                </div>
-                <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>State</th>
-                                <td><input type="text" placeholder="Enter State"></td>
-                            </tr>
-                            <tr>
-                                <th>Country</th>
-                                <td><input type="text" placeholder="Enter Country"></td>
-                            </tr>
-                            <tr>
-                                <th>Post/Zip Code</th>
-                                <td><input type="text" placeholder="Enter Zip Code"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <label for="">State</label><br>
+                    <input type="text" value="Perlis"><br>
+                    <label for="">Country</label><br>
+                    <input type="text" value="Malaysia"><br>
+                    <label for="">Post/Zip Code </label><br>
+                    <input type="text" value="434534"><br>
                 </div>
             </div>
 
@@ -343,54 +223,31 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Job Details</h5>
                 </div>
-                <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Employee Id</th>
-                                <td>001/2024</td>
-                            </tr>
-                            <tr>
-                                <th>Department</th>
-                                <td>Audit</td>
-                            </tr>
-                            <tr>
-                                <th>Designation Group</th>
-                                <td>Lead</td>
-                            </tr>
-                            <tr>
-                                <th>Designation</th>
-                                <td>Designer</td>
-                            </tr>
-                            <tr>
-                                <th>Joining</th>
-                                <td>24/05/2023</td>
-                            </tr>
-
-                        </tbody>
-                        <tbody class="ms-lg-5">
-                            <tr>
-                                <th>Family</th>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <th>Weekend/Weekly Off</th>
-                                <td>Sunday</td>
-                            </tr>
-                            <tr>
-                                <th>Medical Category</th>
-                                <td>Category A</td>
-                            </tr>
-                            <tr>
-                                <th>Employment Type</th>
-                                <td>Permanent</td>
-                            </tr>
-                            <tr>
-                                <th>Working Place</th>
-                                <td>Work Centre</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="mt-3 per-details d-lg-flex">
+                    <div class="col-5">
+                        <label for="">Employee Id</label> <br>
+                        <input type="text" value="001/2024"><br>
+                        <label for="">Department</label> <br>
+                        <input type="text" value="Audit"><br>
+                        <label for="">Designation Group </label> <br>
+                        <input type="text" value="Lead"><br>
+                        <label for="">Designation</label> <br>
+                        <input type="text" value="Designer"><br>
+                        <label for="">Joining</label> <br>
+                        <input type="text" value="24/05/2023">
+                    </div>
+                    <div class="col-5">
+                        <label for="">Family</label> <br>
+                        <input type="text" value="4"><br>
+                        <label for="">Weekend/Weekly Off</label> <br>
+                        <input type="text" value="Sunday"><br>
+                        <label for="">Medical Category</label> <br>
+                        <input type="text" value="Category A"><br>
+                        <label for="">Employment Type</label> <br>
+                        <input type="text" value="Permanent"><br>
+                        <label for="">Working Place</label> <br>
+                        <input type="text" value="Work Centre">
+                    </div>
                 </div>
             </div>
 
@@ -399,22 +256,12 @@
                     <h5>Leave Details</h5>
                 </div>
                 <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Annual Leave</th>
-                                <td>001/2024</td>
-                            </tr>
-                            <tr>
-                                <th>Sick Leave</th>
-                                <td>Audit</td>
-                            </tr>
-                            <tr>
-                                <th>Special Leave</th>
-                                <td>Audit</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <label for="">Annual Leave</label> <br>
+                    <input type="text" value="18 days"><br>
+                    <label for="">Sick Leave</label> <br>
+                    <input type="text" value="18 days"><br>
+                    <label for="">Special Leave </label> <br>
+                    <input type="text" value="5 days"><br>
                 </div>
             </div>
 
@@ -422,37 +269,23 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h5>Pay Details - Earnings</h5>
                 </div>
-                <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Currency</th>
-                                <td>Indian Rupee</td>
-                            </tr>
-                            <tr>
-                                <th>Grade</th>
-                                <td>A</td>
-                            </tr>
-                            <tr>
-                                <th>Basic Salary</th>
-                                <td>5,000.000</td>
-                            </tr>
-                        </tbody>
-                        <tbody class="ms-lg-5">
-                            <tr>
-                                <th>Internet And Telephone</th>
-                                <td>0.000</td>
-                            </tr>
-                            <tr>
-                                <th>Total of Earnings(Gross)</th>
-                                <td>5,400.000</td>
-                            </tr>
-                            <tr>
-                                <th>Maximum allowed Limit Percentage</th>
-                                <td>40% for Loan Monthly Pay</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="mt-3 per-details d-lg-flex">
+                    <div class="col-5">
+                        <label for="">Currency</label> <br>
+                        <input type="text" value="Indian Rupee"><br>
+                        <label for="">Grade</label> <br>
+                        <input type="text" value="A"><br>
+                        <label for="">Basic Salary</label> <br>
+                        <input type="text" value="5,000.000"><br>
+                    </div>
+                    <div class="col-5">
+                        <label for="">Internet And Telephone</label> <br>
+                        <input type="text" value="0.000"><br>
+                        <label for="">Total of Earnings(Gross)</label> <br>
+                        <input type="text" value="5,400.000"><br>
+                        <label for="">Maximum allowed Limit Percentage</label> <br>
+                        <input type="text" value="40% for Loan Monthly Pay"><br>
+                    </div>
                 </div>
             </div>
 
@@ -461,14 +294,8 @@
                     <h5>Payment Mode</h5>
                 </div>
                 <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Mode of Pay</th>
-                                <td>Cash</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <label for="">Mode of Pay</label> <br>
+                    <input type="text" value="Cash">
                 </div>
             </div>
 
@@ -477,14 +304,8 @@
                     <h5>KYC Details</h5>
                 </div>
                 <div class="mt-3 per-details">
-                    <table class="d-md-flex">
-                        <tbody class="me-lg-5">
-                            <tr>
-                                <th>Blood Group</th>
-                                <td>A+</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <label for="">Blood Group</label> <br>
+                    <input type="text" value="A+">
                 </div>
             </div>
 
