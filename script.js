@@ -77,7 +77,7 @@ function savePersonalDetailsBtn() {
 function editAddressBtn() {
   document.getElementById("editAddressBtn").style.display = "none";
   document.getElementById("saveAddressBtn").style.display = "block";
-  var inputs = document.querySelectorAll("#profile-address input");
+  var inputs = document.querySelectorAll("#pro-addres input");
   inputs.forEach(function (input) {
     input.style.border = "1px solid gray";
     input.style.padding = "5px 10px";
@@ -89,7 +89,7 @@ function editAddressBtn() {
 function saveAddressBtn() {
   document.getElementById("editAddressBtn").style.display = "block";
   document.getElementById("saveAddressBtn").style.display = "none";
-  var inputs = document.querySelectorAll("#profile-address input");
+  var inputs = document.querySelectorAll("#pro-addres input");
   inputs.forEach(function (input) {
     input.style.border = "0px";
     input.style.padding = "5px 10px";

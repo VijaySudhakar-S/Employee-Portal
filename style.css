@@ -7,6 +7,7 @@
   --darkgreen: #088738;
   --blue: #037eff;
   --black: black;
+  --white: white;
 }
 * {
   margin: 0;
@@ -816,6 +817,8 @@ center {
   border: 1px solid rgb(232, 232, 232);
   border-radius: 5px;
   background-color: var(--verylightgreen);
+  height: 100%;
+  width: 100%;
 }
 
 .pro-img img {
@@ -863,6 +866,15 @@ center {
 }
 
 .per-details input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.pro-addres input {
   border: none;
   background-color: transparent;
   outline: none;

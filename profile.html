@@ -151,10 +151,10 @@
             </div>
         </header>
 
-        <div class="row mt-3 mx-2 m-lg-4">
+        <div class="row mt-3 mx-2 m-lg-4 d-flex justify-content-between">
 
-            <div class="col-12 pro-img p-3 p-lg-4 d-flex align-items-center  justify-content-between">
-                <div class="d-flex align-items-center">
+            <div class="col-lg-12 d-flex align-items-center  justify-content-between">
+                <div class="d-flex align-items-center pro-img p-3 p-lg-4">
                     <div>
                         <img src="Images/Profile (2).png" alt="" width="100" height="100">
                     </div>
@@ -167,145 +167,160 @@
             </div>
 
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="personal-details">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Personal Details</h5>
-                    <div>
-                        <button id="editPersonalDetailsBtn" onclick="editPersonalDetailsBtn()">Edit</button>
-                        <button id="savePersonalDetailsBtn" onclick="savePersonalDetailsBtn()">Save</button>
+            <div class="col-lg-7 mt-3 mt-lg-4" id="personal-details">
+                <div class="pro-img p-3 p-lg-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Personal Details</h5>
+                        <div>
+                            <button id="editPersonalDetailsBtn" onclick="editPersonalDetailsBtn()">Edit</button>
+                            <button id="savePersonalDetailsBtn" onclick="savePersonalDetailsBtn()">Save</button>
+                        </div>
+                    </div>
+                    <div class="mt-3 per-details d-lg-flex">
+                        <div class="col-lg-6">
+                            <label for="">Employee Name </label> <br>
+                            <input type="text" value="Mr. Keny Kayal"><br>
+                            <label for="">Employee Id</label> <br>
+                            <input type="text" value="001/2024"><br>
+                            <label for="">Mobile Phone</label> <br>
+                            <input type="text" value="434534"><br>
+                            <label for="">Email </label> <br>
+                            <input type="text" value="kenny@tamilacc.xyz"><br>
+                            <label for="">Gender</label> <br>
+                            <input type="text" value="Male">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="">Date of Birth</label><br>
+                            <input type="text" value="02/05/1995"><br>
+                            <label for="">Marital Status</label><br>
+                            <input type="text" value="Married"><br>
+                            <label for="">Status</label> <br>
+                            <input type="text" value="Active"><br>
+                            <label for="">Age</label> <br>
+                            <input type="text" value="29"><br>
+                        </div>
                     </div>
                 </div>
-                <div class="mt-3 per-details d-lg-flex">
-                    <div class="col-lg-5">
-                        <label for="">Employee Name </label> <br>
-                        <input type="text" value="Mr. Keny Kayal"><br>
-                        <label for="">Employee Id</label> <br>
-                        <input type="text" value="001/2024"><br>
-                        <label for="">Mobile Phone</label> <br>
+            </div>
+
+            <div class="col-lg-5 mt-3 mt-lg-4" id="pro-addres">
+                <div class="pro-img p-3 p-lg-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Address</h5>
+                        <div>
+                            <button id="editAddressBtn" onclick="editAddressBtn()">Edit</button>
+                            <button id="saveAddressBtn" onclick="saveAddressBtn()">Save</button>
+                        </div>
+                    </div>
+                    <div class="mt-3 per-details">
+                        <label for="">State</label><br>
+                        <input type="text" value="Perlis"><br>
+                        <label for="">Country</label><br>
+                        <input type="text" value="Malaysia"><br>
+                        <label for="">Post/Zip Code </label><br>
                         <input type="text" value="434534"><br>
-                        <label for="">Email </label> <br>
-                        <input type="text" value="kenny@tamilacc.xyz"><br>
-                        <label for="">Gender</label> <br>
-                        <input type="text" value="Male">
-                    </div>
-                    <div class="col-lg-5">
-                        <label for="">Date of Birth</label><br>
-                        <input type="text" value="02/05/1995"><br>
-                        <label for="">Marital Status</label><br>
-                        <input type="text" value="Married"><br>
-                        <label for="">Status</label> <br>
-                        <input type="text" value="Active"><br>
-                        <label for="">Age</label> <br>
-                        <input type="text" value="29"><br>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img" id="profile-address">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Address</h5>
-                    <div>
-                        <button id="editAddressBtn" onclick="editAddressBtn()">Edit</button>
-                        <button id="saveAddressBtn" onclick="saveAddressBtn()">Save</button>
+            <div class="col-lg-7 mt-3 mt-lg-4">
+                <div class="p-3 p-lg-4 pro-img">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Job Details</h5>
                     </div>
-                </div>
-                <div class="mt-3 per-details">
-                    <label for="">State</label><br>
-                    <input type="text" value="Perlis"><br>
-                    <label for="">Country</label><br>
-                    <input type="text" value="Malaysia"><br>
-                    <label for="">Post/Zip Code </label><br>
-                    <input type="text" value="434534"><br>
-                </div>
-            </div>
-
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Job Details</h5>
-                </div>
-                <div class="mt-3 per-details d-lg-flex">
-                    <div class="col-5">
-                        <label for="">Employee Id</label> <br>
-                        <input type="text" value="001/2024"><br>
-                        <label for="">Department</label> <br>
-                        <input type="text" value="Audit"><br>
-                        <label for="">Designation Group </label> <br>
-                        <input type="text" value="Lead"><br>
-                        <label for="">Designation</label> <br>
-                        <input type="text" value="Designer"><br>
-                        <label for="">Joining</label> <br>
-                        <input type="text" value="24/05/2023">
-                    </div>
-                    <div class="col-5">
-                        <label for="">Family</label> <br>
-                        <input type="text" value="4"><br>
-                        <label for="">Weekend/Weekly Off</label> <br>
-                        <input type="text" value="Sunday"><br>
-                        <label for="">Medical Category</label> <br>
-                        <input type="text" value="Category A"><br>
-                        <label for="">Employment Type</label> <br>
-                        <input type="text" value="Permanent"><br>
-                        <label for="">Working Place</label> <br>
-                        <input type="text" value="Work Centre">
+                    <div class="mt-3 per-details d-lg-flex">
+                        <div class="col-6">
+                            <label for="">Employee Id</label> <br>
+                            <input type="text" value="001/2024"><br>
+                            <label for="">Department</label> <br>
+                            <input type="text" value="Audit"><br>
+                            <label for="">Designation Group </label> <br>
+                            <input type="text" value="Lead"><br>
+                            <label for="">Designation</label> <br>
+                            <input type="text" value="Designer"><br>
+                            <label for="">Joining</label> <br>
+                            <input type="text" value="24/05/2023">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Family</label> <br>
+                            <input type="text" value="4"><br>
+                            <label for="">Weekend/Weekly Off</label> <br>
+                            <input type="text" value="Sunday"><br>
+                            <label for="">Medical Category</label> <br>
+                            <input type="text" value="Category A"><br>
+                            <label for="">Employment Type</label> <br>
+                            <input type="text" value="Permanent"><br>
+                            <label for="">Working Place</label> <br>
+                            <input type="text" value="Work Centre">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Leave Details</h5>
-                </div>
-                <div class="mt-3 per-details">
-                    <label for="">Annual Leave</label> <br>
-                    <input type="text" value="18 days"><br>
-                    <label for="">Sick Leave</label> <br>
-                    <input type="text" value="18 days"><br>
-                    <label for="">Special Leave </label> <br>
-                    <input type="text" value="5 days"><br>
-                </div>
-            </div>
-
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Pay Details - Earnings</h5>
-                </div>
-                <div class="mt-3 per-details d-lg-flex">
-                    <div class="col-5">
-                        <label for="">Currency</label> <br>
-                        <input type="text" value="Indian Rupee"><br>
-                        <label for="">Grade</label> <br>
-                        <input type="text" value="A"><br>
-                        <label for="">Basic Salary</label> <br>
-                        <input type="text" value="5,000.000"><br>
+            <div class="col-lg-5 mt-3 mt-lg-4">
+                <div class="p-3 p-lg-4 pro-img">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Leave Details</h5>
                     </div>
-                    <div class="col-5">
-                        <label for="">Internet And Telephone</label> <br>
-                        <input type="text" value="0.000"><br>
-                        <label for="">Total of Earnings(Gross)</label> <br>
-                        <input type="text" value="5,400.000"><br>
-                        <label for="">Maximum allowed Limit Percentage</label> <br>
-                        <input type="text" value="40% for Loan Monthly Pay"><br>
+                    <div class="mt-3 per-details">
+                        <label for="">Annual Leave</label> <br>
+                        <input type="text" value="18 days"><br>
+                        <label for="">Sick Leave</label> <br>
+                        <input type="text" value="18 days"><br>
+                        <label for="">Special Leave </label> <br>
+                        <input type="text" value="5 days"><br>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>Payment Mode</h5>
-                </div>
-                <div class="mt-3 per-details">
-                    <label for="">Mode of Pay</label> <br>
-                    <input type="text" value="Cash">
+            <div class="col-lg-7 mt-3 mt-lg-4">
+                <div class="p-3 p-lg-4 pro-img">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Pay Details - Earnings</h5>
+                    </div>
+                    <div class="mt-3 per-details d-lg-flex">
+                        <div class="col-6">
+                            <label for="">Currency</label> <br>
+                            <input type="text" value="Indian Rupee"><br>
+                            <label for="">Grade</label> <br>
+                            <input type="text" value="A"><br>
+                            <label for="">Basic Salary</label> <br>
+                            <input type="text" value="5,000.000"><br>
+                        </div>
+                        <div class="col-6">
+                            <label for="">Internet And Telephone</label> <br>
+                            <input type="text" value="0.000"><br>
+                            <label for="">Total of Earnings(Gross)</label> <br>
+                            <input type="text" value="5,400.000"><br>
+                            <label for="">Maximum allowed Limit Percentage</label> <br>
+                            <input type="text" value="40% for Loan Monthly Pay"><br>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4  p-3 p-lg-4 pro-img">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h5>KYC Details</h5>
+            <div class="col-lg-5 mt-3 mt-lg-4">
+                <div class="col-12">
+                    <div class="p-3 p-lg-4 pro-img">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5>Payment Mode</h5>
+                        </div>
+                        <div class="mt-3 per-details">
+                            <label for="">Mode of Pay</label> <br>
+                            <input type="text" value="Cash">
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-3 per-details">
-                    <label for="">Blood Group</label> <br>
-                    <input type="text" value="A+">
+                <div class="col-12 mt-3 mt-lg-4">
+                    <div class="p-3 p-lg-4 pro-img">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5>KYC Details</h5>
+                        </div>
+                        <div class="mt-3 per-details">
+                            <label for="">Blood Group</label> <br>
+                            <input type="text" value="A+">
+                        </div>
+                    </div>
                 </div>
             </div>
 
