@@ -8,7 +8,13 @@
   --blue: #037eff;
   --black: black;
   --white: white;
+  --link-color: black;
+  --tableHead: #d1d0d0;
+  --tableRowOdd: #f2f2f2;
+  --tableRowEven: white;
+  --tableBorder: white;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +29,16 @@ body {
 
 body.rtl {
   direction: rtl;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+  --link-color: white;
+  --tableHead: #000000;
+  --tableRowOdd: #000000;
+  --tableRowEven: #252525;
+  --tableBorder:#2e2e2e;
 }
 
 /* ---------------------------- Log in ------------------------- */
@@ -83,7 +99,8 @@ body.rtl {
   outline: none;
 }
 
-.log-right .login-btn {
+.log-right #login-btn,
+#set-pass-btn {
   background-color: var(--darkgreen);
   border: 1px solid transparent;
   width: 100%;
@@ -97,7 +114,8 @@ body.rtl {
   transition: 0.3s;
 }
 
-.login-btn:hover {
+#login-btn:hover,
+#set-pass-btn:hover {
   background-color: transparent;
   color: var(--darkgreen);
   border: 1px solid var(--darkgreen);
@@ -111,6 +129,20 @@ body.rtl {
   width: 100%;
   text-align: right;
   margin-top: 10px;
+}
+
+#back-login-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--darkgreen);
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#forgotPass-con {
+  display: none;
 }
 
 /* ------------------------ Desktop Sidebar ------------------------*/
@@ -193,6 +225,7 @@ body.rtl {
   white-space: nowrap;
   pointer-events: none;
   transition: 0s;
+  color: black;
 }
 
 .maxsidebar li .tooltip.rlt {
@@ -342,7 +375,6 @@ body.rtl {
 }
 
 .dashboard-section .welcome-text {
-  color: #11101d;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -357,7 +389,7 @@ body.rtl {
 }
 
 .header-btns a {
-  color: black;
+  color: var(--link-color);
   font-size: 25px;
   transition: 0.2s;
   border-radius: 50%;
@@ -373,6 +405,7 @@ body.rtl {
 .lang-dropdown span {
   font-size: 1rem;
   margin-right: 5px;
+  color: var(--link-color);
 }
 
 .lang-dropdown-content {
@@ -383,7 +416,7 @@ body.rtl {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
   background-color: white;
-  color: black;
+  color: var(--black);
   padding: 5px 10px;
 }
 
@@ -512,24 +545,26 @@ body.rtl {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
-  background-color: white;
+  border: 1px solid var(--tableBorder);
 }
 
 .leave-history th,
 .leave-history td {
   text-align: center;
   padding: 8px;
-  border-right: 1px solid white;
+  border-right: 1px solid var(--tableBorder);
 }
 
 .leave-history th {
-  background-color: rgb(209, 208, 208);
+  background-color: var(--tableHead);
   font-weight: 550;
 }
 
 .leave-history tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: var(--tableRowOdd);
+}
+.leave-history tr:nth-child(even) {
+  background-color: var(--tableRowEven);
 }
 
 /* ---------------------- Payroll --------------- */
@@ -602,12 +637,12 @@ body.rtl {
 
 .payroll-search span {
   color: gray;
-  margin: 0 10px;
 }
 .payroll-search input {
   outline: none;
   border: none;
   background-color: transparent;
+  width: 100%;
 }
 
 .each-in-member {
@@ -857,7 +892,7 @@ center {
 .profile-names span:first-child {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--black);
+  color: var(--link-color);
 }
 
 .per-details label {
@@ -872,6 +907,7 @@ center {
   margin-bottom: 20px;
   font-weight: 500;
   width: 100%;
+  color: var(--link-color);
 }
 
 .pro-addres input {

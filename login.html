@@ -17,23 +17,39 @@
 <body>
 
     <div class="row login">
-        <div class="col-md-6 log-left d-flex flex-column justify-content-center align-items-center">
+        <div class="col-lg-6 log-left d-flex flex-column justify-content-center align-items-center d-none d-lg-flex">
             <img src="Images/logo (2).png" alt="">
             <h3>Welcome Back!</h3>>
         </div>
-        <div class="col-md-6 log-right d-flex justify-content-center align-items-center px-5">
+        <div class="col-lg-6 log-right d-flex justify-content-center align-items-center px-5">
             <form action="">
                 <h3>Log In</h3>
-                <div>
-                    <label for="enterMail">Email Address</label> <br>
-                    <input type="mail" id="enterMail">
+                <div id="login-con">
+                    <div>
+                        <label for="enterMail">Email Address</label> <br>
+                        <input type="mail" id="enterMail">
+                    </div>
+                    <div>
+                        <label for="enterPass">Password</label> <br>
+                        <input type="password">
+                    </div>
+                    <button class="forgot-pass" onclick="forgotPass()">Forgot Password ?</button>
+                    <button type="submit" id="login-btn">Login</button> <br>
                 </div>
-                <div>
-                    <label for="enterPass">Password</label> <br>
-                    <input type="password" >
+                <div id="forgotPass-con">
+                    <div>
+                        <label for="">Email Address</label> <br>
+                        <input type="mail" id="">
+                    </div>
+                    <div>
+                        <label for="">Set a Password</label> <br>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <button id="set-pass-btn" type="submit">Set Password</button>
+                        <button id="back-login-btn" type="submit" onclick=" backLogPass()">Back</button>
+                    </div>
                 </div>
-                <button class="forgot-pass">Forgot Password ?</button>
-                <button type="submit" class="login-btn">Login</button> <br>
             </form>
         </div>
     </div>

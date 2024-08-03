@@ -16,36 +16,64 @@ function menuBtnChange() {
 
 // =========  LTR to RTL =============
 
-const directionRlt = document.getElementById("directionRlt");
-const directionLtr = document.getElementById("directionLtr");
-const body = document.body;
-const maxSidebar = document.getElementById("maxsidebar");
-const dashboardSection = document.getElementById("dashboard-section");
-const maxSidebarlogout = document.getElementById("maxSidebarlogout");
-const tooltips = document.querySelectorAll(".tooltip");
-const payrollPlusBtn = document.getElementById("payroll-plus-btn");
+document.addEventListener("DOMContentLoaded", () => {
+  const directionRlt = document.getElementById("directionRlt");
+  const directionLtr = document.getElementById("directionLtr");
+  const body = document.body;
+  const maxSidebar = document.getElementById("maxsidebar");
+  const dashboardSection = document.getElementById("dashboard-section");
+  const maxSidebarlogout = document.getElementById("maxSidebarlogout");
+  const tooltips = document.querySelectorAll(".tooltip");
+  const payrollPlusBtn = document.getElementById("payroll-plus-btn");
 
-directionRlt.addEventListener("click", () => {
-  body.classList.add("rtl");
-  maxSidebar.classList.add("rlt");
-  dashboardSection.classList.add("rlt");
-  maxSidebarlogout.classList.add("rlt");
-  payrollPlusBtn.classList.add("rlt");
-  tooltips.forEach((tooltip) => {
-    tooltip.classList.add("rlt");
-  });
-});
+  function applyRtl() {
+    body.classList.add("rtl");
+    maxSidebar.classList.add("rlt");
+    dashboardSection.classList.add("rlt");
+    maxSidebarlogout.classList.add("rlt");
+    payrollPlusBtn.classList.add("rlt");
+    tooltips.forEach((tooltip) => {
+      tooltip.classList.add("rlt");
+    });
+    localStorage.setItem("direction", "rtl");
+  }
 
-directionLtr.addEventListener("click", () => {
-  body.classList.remove("rtl");
-  maxSidebar.classList.remove("rlt");
-  dashboardSection.classList.remove("rlt");
-  maxSidebarlogout.classList.remove("rlt");
-  payrollPlusBtn.classList.remove("rlt");
-  tooltips.forEach((tooltip) => {
-    tooltip.classList.remove("rlt");
-  });
+  function applyLtr() {
+    body.classList.remove("rtl");
+    maxSidebar.classList.remove("rlt");
+    dashboardSection.classList.remove("rlt");
+    maxSidebarlogout.classList.remove("rlt");
+    payrollPlusBtn.classList.remove("rlt");
+    tooltips.forEach((tooltip) => {
+      tooltip.classList.remove("rlt");
+    });
+    localStorage.setItem("direction", "ltr");
+  }
+
+  directionRlt.addEventListener("click", applyRtl);
+  directionLtr.addEventListener("click", applyLtr);
+
+  // Apply saved direction preference on page load
+  const savedDirection = localStorage.getItem("direction");
+  if (savedDirection === "rtl") {
+    applyRtl();
+  } else {
+    applyLtr();
+  }
 });
+// ============  Login =============
+
+function forgotPass() {
+  event.preventDefault();
+  document.getElementById("login-con").style.display = "none";
+  document.getElementById("forgotPass-con").style.display = "block";
+}
+
+function backLogPass() {
+  event.preventDefault();
+  document.getElementById("login-con").style.display = "block";
+  document.getElementById("forgotPass-con").style.display = "none";
+}
 
 // ============  Profile =============
 
@@ -96,3 +124,28 @@ function saveAddressBtn() {
     input.style.width = "90%";
   });
 }
+
+// ============  Dark Mode =============
+
+function setDarkMode(isDark) {
+  if (isDark) {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("darkMode", "enabled");
+  } else {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("darkMode", "disabled");
+  }
+}
+
+if (localStorage.getItem("darkMode") === "enabled") {
+  setDarkMode(true);
+} else {
+  setDarkMode(false);
+}
+
+document
+  .getElementById("darkModeToggle")
+  .addEventListener("click", function () {
+    const isDarkModeEnabled = document.body.classList.contains("dark-mode");
+    setDarkMode(!isDarkModeEnabled);
+  });
