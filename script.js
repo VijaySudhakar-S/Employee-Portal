@@ -20,38 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const directionRlt = document.getElementById("directionRlt");
   const directionLtr = document.getElementById("directionLtr");
   const body = document.body;
-  const maxSidebar = document.getElementById("maxsidebar");
-  const dashboardSection = document.getElementById("dashboard-section");
-  const maxSidebarlogout = document.getElementById("maxSidebarlogout");
-  const tooltips = document.querySelectorAll(".tooltip");
-  const payrollPlusBtn = document.getElementById("payroll-plus-btn");
+  const elementsToToggle = [
+    document.getElementById("maxsidebar"),
+    document.getElementById("dashboard-section"),
+    document.getElementById("maxSidebarlogout"),
+    document.getElementById("payroll-plus-btn"),
+    ...document.querySelectorAll(".tooltip"),
+  ];
 
   function applyRtl() {
     body.classList.add("rtl");
-    maxSidebar.classList.add("rlt");
-    dashboardSection.classList.add("rlt");
-    maxSidebarlogout.classList.add("rlt");
-    payrollPlusBtn.classList.add("rlt");
-    tooltips.forEach((tooltip) => {
-      tooltip.classList.add("rlt");
-    });
+    elementsToToggle.forEach((el) => el?.classList.add("rlt"));
     localStorage.setItem("direction", "rtl");
   }
 
   function applyLtr() {
     body.classList.remove("rtl");
-    maxSidebar.classList.remove("rlt");
-    dashboardSection.classList.remove("rlt");
-    maxSidebarlogout.classList.remove("rlt");
-    payrollPlusBtn.classList.remove("rlt");
-    tooltips.forEach((tooltip) => {
-      tooltip.classList.remove("rlt");
-    });
+    elementsToToggle.forEach((el) => el?.classList.remove("rlt"));
     localStorage.setItem("direction", "ltr");
   }
 
-  directionRlt.addEventListener("click", applyRtl);
-  directionLtr.addEventListener("click", applyLtr);
+  directionRlt?.addEventListener("click", applyRtl);
+  directionLtr?.addEventListener("click", applyLtr);
 
   // Apply saved direction preference on page load
   const savedDirection = localStorage.getItem("direction");
@@ -61,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applyLtr();
   }
 });
+
 // ============  Login =============
 
 function forgotPass() {

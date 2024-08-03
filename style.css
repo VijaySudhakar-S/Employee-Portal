@@ -38,7 +38,7 @@ body.dark-mode {
   --tableHead: #000000;
   --tableRowOdd: #000000;
   --tableRowEven: #252525;
-  --tableBorder:#2e2e2e;
+  --tableBorder: #2e2e2e;
 }
 
 /* ---------------------------- Log in ------------------------- */
@@ -97,6 +97,15 @@ body.dark-mode {
   background-color: transparent;
   margin-bottom: 20px !important;
   outline: none;
+}
+
+.mobile-welcome{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mobile-welcome h6{
+  margin-top: 10px;
 }
 
 .log-right #login-btn,
@@ -646,12 +655,17 @@ body.dark-mode {
 }
 
 .each-in-member {
-  padding: 15px 20px;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 20px;
+  padding-top: 5px;
+}
+
+.each-in-member .name-inv {
   border-bottom: 2px solid rgb(241, 240, 240);
+  margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 .in-name-amt {
