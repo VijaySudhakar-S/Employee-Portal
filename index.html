@@ -11,7 +11,7 @@
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body>
@@ -136,7 +136,7 @@
 
         <header>
             <div>
-                <h1 class="welcome-text">Welcome Back <span>Vijay</span></h1>
+                <h4 style="font-weight: 500;">Dashboard</h4>
             </div>
 
             <div class="header-btns">
@@ -152,94 +152,176 @@
                 <button><a href="profile.html"><i class='bx bx-user-circle'></i></a></button>
             </div>
         </header>
+        <h1 class="welcome-text-dashboard mt-1">Welcome Back, <span>Vijay</span></h1>
+        <p class="quick-txt">Here are some quick links that you can use.</p>
 
-        <div class="my-4 ">
-            <h4 style="font-weight: 500;">Dashboard</h4>
-        </div>
-
-        <div class="row row-cols-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-lg-4 g-4 mt-2">
             <div class="col dashboard-cols">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Total Leaves Taken</h5>
+                        <div class="card-logo">
+                            <div><img src="Images/calendar.png" alt=""></div>
+                        </div>
                         <p class="card-text">5 Days</p>
+                        <h5 class="card-title">Total Leaves Taken</h5>
                     </div>
                 </div>
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Attendance Percentage</h5>
+                        <div class="card-logo">
+                            <div><img src="Images/growth.png" alt=""></div>
+                        </div>
                         <p class="card-text">95%</p>
+                        <h5 class="card-title">Attendance Percentage</h5>
                     </div>
                 </div>
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Pending Reimbursement Requests</h5>
+                        <div class="card-logo">
+                            <div><img src="Images/interview.png" alt=""></div>
+                        </div>
                         <p class="card-text">2 Requests</p>
+                        <h5 class="card-title">Pending Reimbursement Requests</h5>
                     </div>
                 </div>
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Current Loan Status</h5>
+                        <div class="card-logo">
+                            <div><img src="Images/status.png" alt=""></div>
+                        </div>
                         <p class="card-text">$5000 Remaining</p>
+                        <h5 class="card-title">Current Loan Status</h5>
                     </div>
                 </div>
             </div>
         </div>
+        <h4 style="font-weight: 500;" class="my-4">Recent Updates</h4>
+        <div id="apexchart"></div>
         <div class="row mt-5 dashboard-recents">
             <div class="col-md-6">
-                <h5>Recent Leaves</h5>
-                <table>
-                    <tr>
-                        <th>Leave Type</th>
-                        <th>Date</th>
-                    </tr>
-                    <tr>
-                        <td>Annual Leave</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
-                    <tr>
-                        <td>Sick Leave</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
-                    <tr>
-                        <td>Annual Leave</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
+                <h5 class="table-title mb-4">Recent Leaves</h5>
+                <table class="table-dashboard">
+                    <thead>
+                        <tr>
+                            <th>Leave Type</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Annual Leave</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Sick Leave</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Leave</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="col-md-6 mt-5 mt-md-0">
-                <h5>Recent Reimbursement</h5>
-                <table>
-                    <tr>
-                        <th>Amount</th>
-                        <th>Date</th>
-                    </tr>
-                    <tr>
-                        <td>$200</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
-                    <tr>
-                        <td>$100</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
-                    <tr>
-                        <td>$200</td>
-                        <td>19 Feb 2020</td>
-                    </tr>
+                <h5 class="table-title mb-4">Recent Reimbursement</h5>
+                <table class="table-dashboard">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$200</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                        <tr>
+                            <td>$100</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                        <tr>
+                            <td>$200</td>
+                            <td>19 Feb 2020</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-
         </div>
+
         <div class="empty"></div>
     </section>
 
     <!-- Scripts -->
+
+    <script>
+        var options = {
+            series: [{
+                name: 'Profit',
+                data: [1.5, 2.0, 3.8, 4.0, 2.5, 1.7, 2.0] // Example data
+            }],
+            chart: {
+                type: 'bar',
+                height: 350
+            },
+            plotOptions: {
+                bar: {
+                    columnWidth: '20', // Reduces the width of the bars
+                    borderRadius: 4,
+                    horizontal: false,
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            xaxis: {
+                categories: ['16/08', '17/08', '18/08', '19/08', '20/08', '21/08', '22/08'],
+                labels: {
+                    style: {
+                        colors: '#808080', // X-axis label color
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Profit',
+                    style: {
+                        color: '#808080', // Y-axis title color
+                        fontSize: '14px'
+                    }
+                },
+                labels: {
+                    style: {
+                        colors: '#808080', // Y-axis label color
+                        fontSize: '12px'
+                    }
+                },
+                min: -4,
+                max: 4
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val + "K";
+                    },
+                    style: {
+                        color: '#808080' // Tooltip text color
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#apexchart"), options);
+        chart.render();
+    </script>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
