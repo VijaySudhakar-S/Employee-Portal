@@ -34,11 +34,16 @@ body.rtl {
 body.dark-mode {
   background-color: black;
   color: white;
+  --white: black;
   --link-color: white;
   --tableHead: #000000;
   --tableRowOdd: #000000;
   --tableRowEven: #252525;
   --tableBorder: #2e2e2e;
+
+  .dashborad-table-col {
+    border: 1px solid transparent;
+  }
 }
 
 /* ---------------------------- Log in ------------------------- */
@@ -374,11 +379,12 @@ body.dark-mode {
   font-weight: 600;
 }
 
-.dashboard-section .welcome-text span , .welcome-text-dashboard span {
+.dashboard-section .welcome-text span,
+.welcome-text-dashboard span {
   color: var(--blue);
 }
 
-.quick-txt{
+.quick-txt {
   color: gray;
 }
 
@@ -457,7 +463,7 @@ body.dark-mode {
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: 1px solid  gray;
+  border: 1px solid gray;
   border-radius: 50%;
   padding: 10px;
 }
@@ -482,25 +488,30 @@ body.dark-mode {
 
 /* ------------------------ Dashboard ----------------------- */
 
+.dashborad-table-col {
+  border: 1px solid rgb(227, 227, 227);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 .table-dashboard {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-
 }
 
 .table-dashboard thead {
-  background-color: var(--lightgreen);
-  color: black !important;
+  background-color: rgb(242, 241, 249);
+  color: black;
 }
 
-.table-dashboard th, .table-dashboard td {
-  padding: 12px 20px;
-  text-align: left;
+.table-dashboard th,
+.table-dashboard td {
+  padding: 13px 20px;
   font-size: 15px;
+  text-align: center;
 }
 
 .table-dashboard th {
@@ -510,12 +521,11 @@ body.dark-mode {
 
 .table-dashboard tbody tr {
   border-bottom: 1px solid #e9ecef;
-  background-color: var(--verylightgreen);
-  transition: background-color 0.3s ease;
+  transition: 0.2s;
 }
 
 .table-dashboard tbody tr:hover {
-  background-color: #f0efef;
+  background-color: #f9f9f9;
 }
 
 .table-dashboard tbody tr:last-child {
@@ -527,25 +537,76 @@ body.dark-mode {
   color: #495057;
 }
 
-.table-dashboard .table-title {
+.dashborad-table-col .table-title {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
-  color: #212529;
 }
 
-.table-dashboard tbody td:first-child {
-  color: var(--darkgreen); 
+.dashborad-table-col button {
+  font-weight: 500;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  width: 120px;
+  background-color: transparent;
 }
 
-  
+.dashborad-table-col .overdue-btn {
+  background-color: rgba(252, 0, 0, 0.132);
+  color: rgba(255, 0, 0, 0.829);
+}
 
+.dashborad-table-col .approved-btn {
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+}
 
+.recent-Reimbursement-table tbody tr td:last-child {
+  text-align: right;
+  color: #088738;
+}
+
+.recent-Reimbursement-table th:last-child {
+  text-align: right;
+}
+
+.chart-container {
+  width: auto;
+  height: 220px;
+}
+
+body.dark-mode {
+  .dashborad-table-col {
+    border: 1px solid transparent;
+    color: white;
+  }
+
+  .table-dashboard {
+    background-color: #000000;
+  }
+
+  .table-dashboard thead {
+    background-color: rgb(46, 46, 46);
+    color: rgb(231, 231, 231);
+  }
+
+  .table-dashboard td {
+    color: rgb(183, 183, 183);
+  }
+
+  .table-dashboard tbody tr {
+    border-bottom: 1px solid #727272;
+  }
+
+  .table-dashboard tbody tr:hover {
+    background-color: #1d1d1d;
+  }
+}
 
 /* ------------------------ Leaves ----------------------- */
 
 .leave-form form {
-  background-color: var(--verylightgreen);
   padding: 20px 0;
 }
 
@@ -574,7 +635,8 @@ body.dark-mode {
 }
 
 .leave-date input {
-  border: 1px solid gray;
+  background-color: var(--white);
+  border: 1px solid #e6e6e6;
   color: grey;
   padding: 5px 10px;
   border-radius: 3px;
@@ -582,8 +644,12 @@ body.dark-mode {
 }
 
 .leave-reason textarea {
+  background-color: var(--white);
   width: 90%;
   padding: 10px;
+  border: 1px solid #e6e6e6;
+  color: var(--link-color);
+  outline: none;
 }
 
 .leave-form button:first-child,
@@ -628,14 +694,23 @@ body.dark-mode {
   background-color: var(--tableRowEven);
 }
 
+body.dark-mode {
+  .leave-date input {
+    border: 1px solid #424242;
+  }
+  .leave-reason textarea {
+    border: 1px solid #424242;
+  }
+}
+
 /* ---------------------- Payroll --------------- */
 
 .in-main-heads {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 .in-main-heads:first-child {
-  border-right: 1px solid gray;
+  border-right: 1px solid #e6e6e6;
 }
 
 .in-main-head {
@@ -643,7 +718,7 @@ body.dark-mode {
 }
 
 .in-main-cont:nth-child(2) {
-  border-left: 1px solid gray;
+  border-left: 1px solid #e6e6e6;
 }
 
 .in-main-cont-left {
@@ -699,15 +774,20 @@ body.dark-mode {
   width: 100%;
   margin-top: 20px;
   padding: 5px 0px;
-  border: 1px solid gray;
+  border: 1px solid #e3e3e3;
   outline: none;
   border-radius: 3px;
 }
 
 .payroll-search span {
   color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .payroll-search input {
+  color: var(--link-color);
   outline: none;
   border: none;
   background-color: transparent;
@@ -860,10 +940,43 @@ center {
   left: 50px;
 }
 
+body.rtl {
+  .in-main-heads {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .in-main-heads:first-child {
+    border-right: none;
+    border-left: 1px solid #e6e6e6;
+  }
+  .in-main-cont:nth-child(2) {
+    border-left: none;
+    border-right: 1px solid #e6e6e6;
+  }
+}
+
+body.dark-mode {
+  .in-main-heads {
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+  }
+  .in-main-heads:first-child {
+    border-right: 1px solid #424242;
+  }
+  .in-main-cont:nth-child(2) {
+    border-left: 1px solid #424242;
+  }
+  .payroll-search {
+    border: 1px solid #424242;
+  }
+  .each-in-member .name-inv {
+    border-bottom: 2px solid #424242;
+  }
+}
+
 /* ---------------------- Reimbursement -------- */
 
 .reimbursement-form {
-  background-color: var(--verylightgreen);
   padding: 20px;
 }
 
@@ -877,18 +990,26 @@ center {
 .reimbursement-form input {
   padding: 5px 10px;
   width: 100%;
+  background-color: var(--white);
+  color: var(--link-color);
+  outline: none;
+}
+
+.loan-form input {
+  border: 1px solid #e6e6e6;
 }
 
 #reimbursement-claim-type,
 #reimbursement-amount {
-  border: 1px solid rgba(128, 128, 128, 0.763);
+  border: 1px solid #e6e6e6;
   border-radius: 2px;
+  margin-top: 8px;
 }
 
 #reimbursement-file::file-selector-button {
-  background-color: white;
+  background-color: var(--white);
   color: var(--darkgreen);
-  border: 1px dotted gray;
+  border: 1px dotted #b1b1b1;
   display: flex;
   margin-bottom: 10px;
   width: 100%;
@@ -918,6 +1039,24 @@ center {
   color: var(--darkgreen);
   background-color: white;
   border: 1px solid var(--darkgreen);
+}
+
+body.dark-mode {
+  .loan-form input {
+    border: 1px solid #424242;
+  }
+  #reimbursement-claim-type,
+  #reimbursement-amount {
+    border: 1px solid #424242;
+    border-radius: 2px;
+  }
+  #reimbursement-file::file-selector-button {
+    border: 1px dotted #424242;
+  }
+
+  #reimbursement-file::file-selector-button:hover {
+    background-color: #181818;
+  }
 }
 
 /* ---------------------- Profile -------------- */
@@ -1001,6 +1140,12 @@ center {
 #saveAddressBtn {
   display: none;
   transition: 0.2s;
+}
+
+body.dark-mode {
+  .pro-img {
+    border: 1px solid rgb(44, 44, 44);
+  }
 }
 
 /* -------------------- Mobile and Tablet View ----------------------- */
@@ -1105,6 +1250,13 @@ center {
 
   .welcome-text-dashboard {
     font-size: 1.5rem;
+  }
+
+  /*----------------------- Dashboard ------------------ */
+
+  .chart-container {
+    width: auto;
+    height: auto;
   }
 
   /*----------------------- Leave ------------------ */
