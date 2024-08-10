@@ -493,10 +493,14 @@ body.dark-mode {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .table-dashboard {
   width: 100%;
+  table-layout: fixed; /* Ensures the table adjusts to the container */
   border-collapse: collapse;
   background-color: #ffffff;
   overflow: hidden;
@@ -512,6 +516,7 @@ body.dark-mode {
   padding: 13px 20px;
   font-size: 15px;
   text-align: center;
+  word-wrap: break-word; /* Allows content to wrap within the cell */
 }
 
 .table-dashboard th {
@@ -546,9 +551,10 @@ body.dark-mode {
 .dashborad-table-col button {
   font-weight: 500;
   border: none;
+  font-size: 13px;
   padding: 5px 20px;
   border-radius: 20px;
-  width: 120px;
+  width: 100%; /* Makes buttons take full width */
   background-color: transparent;
 }
 
@@ -562,13 +568,13 @@ body.dark-mode {
   color: var(--darkgreen);
 }
 
-.recent-Reimbursement-table tbody tr td:last-child {
-  text-align: right;
-  color: #088738;
-}
-
 .recent-Reimbursement-table th:last-child {
   text-align: right;
+}
+
+.recent-Reimbursement-table td:last-child {
+  text-align: right;
+  color: var(--darkgreen);
 }
 
 .chart-container {
@@ -1257,6 +1263,20 @@ body.dark-mode {
   .chart-container {
     width: auto;
     height: auto;
+  }
+
+  .dashborad-table-col {
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+
+  .dashborad-table-col button {
+    font-size: 12px;
+    border: none;
+    padding: 5px 5px;
   }
 
   /*----------------------- Leave ------------------ */
