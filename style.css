@@ -361,17 +361,20 @@ body.dark-mode {
   left: 0px;
 }
 
+.dashboard-section {
+  padding: 20px;
+}
+
 .dashboard-section header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
-  height: 50px;
+  margin-bottom: 20px;
 }
 
-.dashboard-section .welcome-text {
-  font-size: 1.5rem;
-  font-weight: 600;
+.dashboard-section h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .welcome-text-dashboard {
@@ -379,25 +382,41 @@ body.dark-mode {
   font-weight: 600;
 }
 
-.dashboard-section .welcome-text span,
-.welcome-text-dashboard span {
-  color: var(--blue);
+.welcome-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.welcome-text-dashboard span,
+.welcome-text span {
+  color: #27ae60;
 }
 
 .quick-txt {
-  color: gray;
+  color: #7f8c8d;
 }
 
 .header-btns button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  color: var(--link-color);
+  font-size: 1.5rem;
+}
+
+.header-btns button:hover {
+  transform: scale(1.1);
 }
 
 .header-btns a {
   color: var(--link-color);
-  font-size: 25px;
-  transition: 0.2s;
-  border-radius: 50%;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.header-btns a:hover {
+  color: #27ae60;
 }
 
 .lang-dropdown {
@@ -405,11 +424,12 @@ body.dark-mode {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  color: var(--link-color);
+  z-index: 10;
 }
 
 .lang-dropdown span {
   font-size: 1rem;
-  margin-right: 5px;
   color: var(--link-color);
 }
 
@@ -417,39 +437,96 @@ body.dark-mode {
   display: none;
   position: absolute;
   right: 0;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-  background-color: white;
-  color: var(--black);
-  padding: 5px 10px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-radius: 8px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.lang-dropdown:hover .lang-dropdown-content {
+  display: block;
 }
 
 .lang-dropdown-content p {
-  font-size: 1rem !important;
+  font-size: 1rem;
+  padding: 8px 12px;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lang-dropdown-content p:hover {
+  background-color: #f4f6f9;
+}
+
+.notification-section {
+  margin-top: 30px;
+}
+
+.notification-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.notification {
+  background: linear-gradient(135deg, #078f0911, #4b875c76);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.notification:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notification p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: right;
 }
 
 .dashboard-cols .card {
-  border-radius: 5px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   border: none !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-cols .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .dashboard-cols:first-child .card {
-  background-color: #ff000020;
+  background: linear-gradient(135deg, #ff000057, #ff000020);
 }
 
 .dashboard-cols:nth-child(2) .card {
-  background-color: #037dff31;
+  background: linear-gradient(135deg, #037dff6b, #037dff31);
 }
 
 .dashboard-cols:nth-child(3) .card {
-  background-color: #bb00ff2a;
+  background: linear-gradient(135deg, #bb00ff57, #bb00ff2a);
 }
 
 .dashboard-cols:nth-child(4) .card {
-  background-color: #ffc8002c;
+  background: linear-gradient(135deg, #ffc80060, #ffc8002c);
 }
 
 .card-logo {
@@ -462,22 +539,22 @@ body.dark-mode {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-logo img {
-  width: 25px;
+  width: 30px;
 }
 
 .dashboard-cols .card-title {
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .dashboard-cols .card-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px !important;
 }
@@ -489,10 +566,6 @@ body.dark-mode {
 /* ------------------------ Dashboard ----------------------- */
 
 .dashborad-table-col {
-  border: 1px solid rgb(227, 227, 227);
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -504,6 +577,7 @@ body.dark-mode {
   border-collapse: collapse;
   background-color: #ffffff;
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .table-dashboard thead {
@@ -703,10 +777,10 @@ body.dark-mode {
 
 body.dark-mode {
   .leave-date input {
-    border: 1px solid #424242;
+    border: 1px solid #636363;
   }
   .leave-reason textarea {
-    border: 1px solid #424242;
+    border: 1px solid #636363;
   }
 }
 
@@ -1050,15 +1124,15 @@ body.dark-mode {
 
 body.dark-mode {
   .loan-form input {
-    border: 1px solid #424242;
+    border: 1px solid #636363;
   }
   #reimbursement-claim-type,
   #reimbursement-amount {
-    border: 1px solid #424242;
+    border: 1px solid #636363;
     border-radius: 2px;
   }
   #reimbursement-file::file-selector-button {
-    border: 1px dotted #424242;
+    border: 1px dotted #636363;
   }
 
   #reimbursement-file::file-selector-button:hover {
@@ -1261,9 +1335,13 @@ body.dark-mode {
 
   /*----------------------- Dashboard ------------------ */
 
-  .chart-container {
-    width: auto;
-    height: auto;
+  .dashboard-cols .card-title {
+    font-size: .9rem;
+  }
+  
+  .dashboard-cols .card-text {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
   .dashborad-table-col {
