@@ -37,8 +37,8 @@ body.dark-mode {
   --white: black;
   --link-color: white;
   --tableHead: #000000;
-  --tableRowOdd: #000000;
-  --tableRowEven: #252525;
+  --tableRowOdd: #1a1a1a;
+  --tableRowEven: #151515;
   --tableBorder: #2e2e2e;
 
   .dashborad-table-col {
@@ -550,7 +550,7 @@ body.dark-mode {
 }
 
 .dashboard-cols .card-title {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .dashboard-cols .card-text {
@@ -563,7 +563,7 @@ body.dark-mode {
   height: 15vh;
 }
 
-/* ------------------------ Dashboard ----------------------- */
+/* -------------------------- Dashboard ------------------------ */
 
 .dashborad-table-col {
   width: 100%;
@@ -652,9 +652,19 @@ body.dark-mode {
   color: var(--darkgreen);
 }
 
+.dashborad-table-col tr:nth-child(even) {
+  background-color: var(--tableRowOdd);
+}
+
 .chart-container {
   width: auto;
   height: 220px;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
 }
 
 body.dark-mode {
@@ -1055,6 +1065,35 @@ body.dark-mode {
   }
 }
 
+/* ---------------------- Attendence -------- */
+
+.date-picker,
+.date-range-picker {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease;
+  outline: none !important;
+}
+
+.Download-Summary-btn {
+  background-color: var(--darkgreen);
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 10px;
+  transition: 0.2s;
+}
+
+.Download-Summary-btn:hover {
+  background-color: #097633;
+}
+
+#dateRange {
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* ---------------------- Reimbursement -------- */
 
 .reimbursement-form {
@@ -1336,9 +1375,9 @@ body.dark-mode {
   /*----------------------- Dashboard ------------------ */
 
   .dashboard-cols .card-title {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  
+
   .dashboard-cols .card-text {
     font-size: 1.2rem;
     font-weight: 600;
