@@ -1089,9 +1089,112 @@ body.dark-mode {
   background-color: #097633;
 }
 
-#dateRange {
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.date-picker,
+.date-range-picker {
+  border-radius: 3px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none !important;
+  background-color: var(--white);
+  border: 1px solid #e6e6e6;
+}
+
+.daterangepicker {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.daterangepicker .calendar-table {
+  font-size: 0.9rem;
+  background-color: var(--white);
+}
+
+.drp-calendar {
+  background-color: var(--white);
+}
+
+.table-condensed {
+  background-color: var(--white);
+}
+
+.daterangepicker .ranges {
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.daterangepicker .ranges li {
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.daterangepicker .ranges li:hover {
+  background-color: #f0f0f0;
+}
+
+.daterangepicker .drp-buttons {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.daterangepicker .drp-buttons .btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+body.dark-mode {
+  .date-range-picker,
+  .date-picker {
+    border: 1px solid #636363;
+    color: #aaaaaa;
+  }
+  .daterangepicker {
+    background-color: black !important;
+    border: 1px solid rgb(67, 67, 67);
+    color: #b7b7b7;
+  }
+
+  .daterangepicker .ranges {
+    border: none;
+  }
+  .daterangepicker.opensleft:before {
+    right: 9px;
+  }
+  .daterangepicker .ranges li:hover {
+    background-color: #252525;
+  }
+
+  .daterangepicker .calendar-table {
+    background-color: black;
+    border: none;
+  }
+  .drp-calendar {
+    border-left: 1px solid #535353 !important;
+  }
+
+  .daterangepicker table .off {
+    background-color: transparent;
+    color: gray;
+  }
+
+  .daterangepicker .cancelBtn{
+    color: gray;
+  }
+}
+
+@media (max-width: 768px) {
+  .date-picker,
+  .date-range-picker {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  .daterangepicker {
+    width: 100%;
+  }
 }
 
 /* ---------------------- Reimbursement -------- */
