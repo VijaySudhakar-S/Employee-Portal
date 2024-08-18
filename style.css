@@ -409,18 +409,23 @@ body.dark-mode {
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
-  color: var(--darkgreen);
+  color: var(--link-color);
   font-size: 1.5rem;
+  margin-right: 30px !important;
 }
 
 .header-btns a {
-  color: var(--darkgreen);
-  font-size: 24px;
+  color: var(--link-color);
+  font-size: 1.5rem;
   transition: color 0.3s;
 }
 
+#lang {
+  font-size: 1.4rem;
+}
+
 .header-btns a:hover {
-  color: #27ae60;
+  color: var(--darkgreen);
 }
 
 .lang-dropdown {
@@ -428,13 +433,13 @@ body.dark-mode {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: var(--blue);
+  color: var(--link-color);
   z-index: 10;
 }
 
 .lang-dropdown span {
   font-size: 1rem;
-  color: var(--darkgreen);
+  color: var(--link-color);
 }
 
 .lang-dropdown-content {
@@ -514,7 +519,7 @@ body.dark-mode {
 
 .dashboard-cols .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .dashboard-cols:first-child .card {

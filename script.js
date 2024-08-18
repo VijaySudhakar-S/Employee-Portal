@@ -119,12 +119,16 @@ function saveAddressBtn() {
 // ============  Dark Mode =============
 
 function setDarkMode(isDark) {
+  const themeIcon = document.getElementById("themeIcon");
+
   if (isDark) {
     document.body.classList.add("dark-mode");
     localStorage.setItem("darkMode", "enabled");
+    themeIcon.setAttribute("icon", "iconamoon:mode-light-light"); // Change to light mode icon
   } else {
     document.body.classList.remove("dark-mode");
     localStorage.setItem("darkMode", "disabled");
+    themeIcon.setAttribute("icon", "material-symbols:dark-mode-outline-rounded"); // Change to dark mode icon
   }
 }
 
