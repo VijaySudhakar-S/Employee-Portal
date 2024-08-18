@@ -411,7 +411,7 @@ body.dark-mode {
   transition: background-color 0.3s, transform 0.3s;
   color: var(--link-color);
   font-size: 1.5rem;
-  margin-right: 30px !important;
+  margin-left: 30px !important;
 }
 
 .header-btns a {
