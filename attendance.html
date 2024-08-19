@@ -141,19 +141,24 @@
                 <h1 class="welcome-text">Attend<span>ance</span></h1>
             </div>
             <div class="header-btns d-flex justify-content-center align-items-center">
-                <button id="darkModeToggle">
-                    <iconify-icon id="themeIcon" icon="material-symbols:dark-mode-outline-rounded"></iconify-icon>
+                <button id="hamburgerMenu">
+                    <iconify-icon icon="material-symbols:menu"></iconify-icon>
                 </button>
-                <button class="lang-dropdown">
-                    <span id="lang"><iconify-icon icon="mingcute:earth-2-line"></iconify-icon></span>
-                    <div class="lang-dropdown-content">
-                        <p id="directionLtr">English</p>
-                        <p id="directionRlt">Arabic</p>
-                    </div>
-                </button>
-                <button>
-                    <a href="profile.html"><i class='bx bx-user-circle'></i></a>
-                </button>
+                <div id="headerMenu" class="menu-items">
+                    <button id="darkModeToggle">
+                        <iconify-icon id="themeIcon" icon="material-symbols:dark-mode-outline-rounded"></iconify-icon>
+                    </button>
+                    <button class="lang-dropdown">
+                        <span id="lang"><iconify-icon icon="mingcute:earth-2-line"></iconify-icon></span>
+                        <div class="lang-dropdown-content">
+                            <p id="directionLtr">English</p>
+                            <p id="directionRlt">Arabic</p>
+                        </div>
+                    </button>
+                    <button>
+                        <a href="profile.html"><i class='bx bx-user-circle'></i></a>
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -213,8 +218,7 @@
 
             <div class="row mb-4">
                 <div class="col-6 mb-3 mb-md-0">
-                    <input type="text" class="date-picker" id="selectDateAttendence"
-                        placeholder="Select Date">
+                    <input type="text" class="date-picker" id="selectDateAttendence" placeholder="Select Date">
                 </div>
                 <div class="col-6 mb-3 mb-md-0 d-flex justify-content-end">
                     <button class="Download-Summary-btn">
