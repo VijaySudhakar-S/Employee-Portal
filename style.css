@@ -404,6 +404,19 @@ body.dark-mode {
   color: #7f8c8d;
 }
 
+#headerMenu {
+  display: flex;
+}
+
+#hamburgerMenu {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--link-color);
+}
+
 .header-btns button {
   border: none;
   background-color: transparent;
@@ -411,7 +424,7 @@ body.dark-mode {
   transition: background-color 0.3s, transform 0.3s;
   color: var(--link-color);
   font-size: 1.5rem;
-  margin-right: 30px !important;
+  margin-left: 30px !important;
 }
 
 .header-btns a {
@@ -1506,7 +1519,7 @@ body.dark-mode {
   .dashborad-table-col button {
     font-size: 12px;
     border: none;
-    padding: 5px 5px;
+    padding: 5px 15px;
   }
 
   .table-dashboard th,
@@ -1548,5 +1561,38 @@ body.dark-mode {
 @media (min-width: 992px) {
   .reimbursement-form input {
     width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  #headerMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color:var(--white);
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  #headerMenu button{
+    margin-right: 25px;
+  }
+
+  #hamburgerMenu {
+    display: block;
+  }
+
+  #headerMenu.active {
+    display: flex;
+  }
+
+  .header-btns button,
+  .header-btns a {
+    margin: 10px 0; /* Spacing between the buttons */
   }
 }

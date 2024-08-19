@@ -144,3 +144,10 @@ document
     const isDarkModeEnabled = document.body.classList.contains("dark-mode");
     setDarkMode(!isDarkModeEnabled);
   });
+
+
+
+  document.getElementById('hamburgerMenu').addEventListener('click', function() {
+    document.getElementById('headerMenu').classList.toggle('active');
+});
+

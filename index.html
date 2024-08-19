@@ -141,20 +141,26 @@
             </div>
 
             <div class="header-btns d-flex justify-content-center align-items-center">
-                <button id="darkModeToggle">
-                    <iconify-icon id="themeIcon" icon="material-symbols:dark-mode-outline-rounded"></iconify-icon>
+                <button id="hamburgerMenu">
+                    <iconify-icon icon="material-symbols:menu"></iconify-icon>
                 </button>
-                <button class="lang-dropdown">
-                    <span id="lang"><iconify-icon icon="mingcute:earth-2-line"></iconify-icon></span>
-                    <div class="lang-dropdown-content">
-                        <p id="directionLtr">English</p>
-                        <p id="directionRlt">Arabic</p>
-                    </div>
-                </button>
-                <button>
-                    <a href="profile.html"><i class='bx bx-user-circle'></i></a>
-                </button>
+                <div id="headerMenu" class="menu-items">
+                    <button id="darkModeToggle">
+                        <iconify-icon id="themeIcon" icon="material-symbols:dark-mode-outline-rounded"></iconify-icon>
+                    </button>
+                    <button class="lang-dropdown">
+                        <span id="lang"><iconify-icon icon="mingcute:earth-2-line"></iconify-icon></span>
+                        <div class="lang-dropdown-content">
+                            <p id="directionLtr">English</p>
+                            <p id="directionRlt">Arabic</p>
+                        </div>
+                    </button>
+                    <button>
+                        <a href="profile.html"><i class='bx bx-user-circle'></i></a>
+                    </button>
+                </div>
             </div>
+            
         </header>
 
         <h1 class="welcome-text-dashboard mt-1">Welcome Back, <span>Vijay</span></h1>
@@ -164,18 +170,18 @@
             <h2>Notifications</h2>
             <div class="notification">
                 <p><strong>Admin:</strong> Please update your profile information by the end of this week.</p>
-                <span class="timestamp">10 mins ago</span>
+                <span class="timestamp ms-3">10 mins ago</span>
             </div>
             <div class="notification">
                 <p><strong>HR:</strong> The annual company meeting is scheduled for next Friday at 2 PM.</p>
-                <span class="timestamp">30 mins ago</span>
+                <span class="timestamp ms-3">30 mins ago</span>
             </div>
         </div>
 
-        <div class="row row-cols-2 row-cols-lg-4 g-4 mt-2">
+        <div class="row row-cols-1 row-cols-lg-4 g-4 mt-2">
             <div class="col dashboard-cols">
                 <div class="card h-100">
-                    <div class="card-body d-lg-flex align-items-center">
+                    <div class="card-body d-flex align-items-center">
                         <div class="card-logo">
                             <div><img src="Images/calendar.png" alt=""></div>
                         </div>
@@ -188,7 +194,7 @@
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
-                    <div class="card-body d-lg-flex align-items-center">
+                    <div class="card-body d-flex align-items-center">
                         <div class="card-logo">
                             <div><img src="Images/growth.png" alt=""></div>
                         </div>
@@ -201,7 +207,7 @@
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
-                    <div class="card-body d-lg-flex align-items-center">
+                    <div class="card-body d-flex align-items-center">
                         <div class="card-logo">
                             <div><img src="Images/interview.png" alt=""></div>
                         </div>
@@ -214,7 +220,7 @@
             </div>
             <div class="col dashboard-cols">
                 <div class="card h-100">
-                    <div class="card-body d-lg-flex align-items-center">
+                    <div class="card-body d-flex align-items-center">
                         <div class="card-logo">
                             <div><img src="Images/status.png" alt=""></div>
                         </div>
