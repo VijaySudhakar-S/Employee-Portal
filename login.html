@@ -29,13 +29,17 @@
                         <label for="enterMail">Email Address</label> <br>
                         <input type="mail" id="enterMail">
                     </div>
-                    <div>
+                    <div style="position: relative;">
                         <label for="enterPass">Password</label> <br>
-                        <input type="password">
+                        <input type="password" id="enterPass">
+                        <span id="togglePassword" style="position: absolute; right: 10px; top: 30px; cursor: pointer;">
+                            <iconify-icon icon="mdi:eye-off-outline"></iconify-icon>
+                        </span>
                     </div>
                     <button class="forgot-pass" onclick="forgotPass()">Forgot Password ?</button>
                     <button type="submit" id="login-btn">Login</button> <br>
                 </div>
+
                 <div id="forgotPass-con">
                     <div>
                         <label for="">Email Address</label> <br>
@@ -65,6 +69,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('enterPass');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // Toggle the icon
+            this.innerHTML = type === 'password' ?
+                '<iconify-icon icon="mdi:eye-off-outline"></iconify-icon>' :
+                '<iconify-icon icon="mdi:eye-outline"></iconify-icon>';
+        });
+
+    </script>
 
 
 </body>

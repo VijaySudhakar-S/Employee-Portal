@@ -148,6 +148,20 @@ body.dark-mode {
   font-weight: 500;
 }
 
+#enterPass {
+  width: 100%;
+  padding-right: 30px; 
+}
+
+#togglePassword {
+  font-size: 1.2rem;
+  color: var(--link-color);
+}
+
+#togglePassword:hover {
+  color: var(--darkgreen);
+}
+
 /* ------------------------ Desktop Sidebar ------------------------*/
 
 .maxsidebar {
@@ -1570,7 +1584,7 @@ body.dark-mode {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
-    background-color:var(--white);
+    background-color: var(--white);
     position: absolute;
     right: 10px;
     top: 60px;
@@ -1579,7 +1593,7 @@ body.dark-mode {
     padding: 10px;
   }
 
-  #headerMenu button{
+  #headerMenu button {
     margin-right: 25px;
   }
 
