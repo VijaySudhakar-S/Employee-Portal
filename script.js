@@ -74,6 +74,7 @@ function editPersonalDetailsBtn() {
 
   var inputs = document.querySelectorAll("#personal-details input");
   inputs.forEach(function (input) {
+    input.removeAttribute("readonly");
     input.style.border = "1px solid gray";
     input.style.padding = "5px 10px";
     input.style.width = "90%";
@@ -87,8 +88,9 @@ function savePersonalDetailsBtn() {
 
   var inputs = document.querySelectorAll("#personal-details input");
   inputs.forEach(function (input) {
+    input.setAttribute("readonly", "true");
     input.style.border = "0px";
-    input.style.padding = "5px 10px";
+    input.style.padding = "0px";
     input.style.width = "90%";
   });
 }
@@ -98,6 +100,7 @@ function editAddressBtn() {
   document.getElementById("saveAddressBtn").style.display = "block";
   var inputs = document.querySelectorAll("#pro-addres input");
   inputs.forEach(function (input) {
+    input.removeAttribute("readonly");
     input.style.border = "1px solid gray";
     input.style.padding = "5px 10px";
     input.style.width = "90%";
@@ -110,8 +113,9 @@ function saveAddressBtn() {
   document.getElementById("saveAddressBtn").style.display = "none";
   var inputs = document.querySelectorAll("#pro-addres input");
   inputs.forEach(function (input) {
+    input.setAttribute("readonly", "true");
     input.style.border = "0px";
-    input.style.padding = "5px 10px";
+    input.style.padding = "0px";
     input.style.width = "90%";
   });
 }
@@ -128,7 +132,11 @@ function setDarkMode(isDark) {
   } else {
     document.body.classList.remove("dark-mode");
     localStorage.setItem("darkMode", "disabled");
-    themeIcon.setAttribute("icon", "material-symbols:dark-mode-outline-rounded"); // Change to dark mode icon
+    themeIcon.setAttribute(
+      "icon",
+      "material-symbols:dark-mode-outline-rounded"
+    ); 
+    // Change to dark mode icon
   }
 }
 
@@ -145,9 +153,8 @@ document
     setDarkMode(!isDarkModeEnabled);
   });
 
+// ============  Hamburger =============
 
-
-  document.getElementById('hamburgerMenu').addEventListener('click', function() {
-    document.getElementById('headerMenu').classList.toggle('active');
+document.getElementById("hamburgerMenu").addEventListener("click", function () {
+  document.getElementById("headerMenu").classList.toggle("active");
 });
-
