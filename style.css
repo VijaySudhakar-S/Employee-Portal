@@ -150,7 +150,7 @@ body.dark-mode {
 
 #enterPass {
   width: 100%;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 #togglePassword {
@@ -1370,6 +1370,7 @@ body.dark-mode {
 .per-details label {
   color: var(--darkgreen);
   margin-bottom: 6px;
+  font-weight: 500;
 }
 
 .per-details input {
@@ -1582,8 +1583,8 @@ body.dark-mode {
   #headerMenu {
     display: none;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    align-items: center;
+    justify-content: center;
     background-color: var(--white);
     position: absolute;
     right: 10px;
@@ -1607,6 +1608,12 @@ body.dark-mode {
 
   .header-btns button,
   .header-btns a {
-    margin: 10px 0; /* Spacing between the buttons */
+    margin: 10px 0;
+  }
+
+  body.rtl {
+    #headerMenu {
+      left: 10px;
+    }
   }
 }
