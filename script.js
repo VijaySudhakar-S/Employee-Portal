@@ -17,14 +17,15 @@ function menuBtnChange() {
 // =========  LTR to RTL =============
 
 document.addEventListener("DOMContentLoaded", () => {
-  const directionRlt = document.querySelector(".directionRlt");
-  const directionLtr = document.querySelector(".directionLtr");
+  const directionRlt = document.getElementById("directionRlt");
+  const directionLtr = document.getElementById("directionLtr");
   const body = document.body;
   const elementsToToggle = [
-    document.querySelector(".maxsidebar"),
-    document.querySelector(".dashboard-section"),
-    document.querySelector(".maxSidebarlogout"),
-    ...document.querySelectorAll(".payroll-plus-btn"), // Changed from ID to class
+    document.getElementById("maxsidebar"),
+    document.getElementById("dashboard-section"),
+    document.getElementById("maxSidebarlogout"),
+    document.getElementById("payroll-plus-btn"),
+    ...document.querySelectorAll(".payroll-plus-btn"),
     ...document.querySelectorAll(".tooltip"),
   ];
 
