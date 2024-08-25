@@ -17,14 +17,14 @@ function menuBtnChange() {
 // =========  LTR to RTL =============
 
 document.addEventListener("DOMContentLoaded", () => {
-  const directionRlt = document.getElementById("directionRlt");
-  const directionLtr = document.getElementById("directionLtr");
+  const directionRlt = document.querySelector(".directionRlt");
+  const directionLtr = document.querySelector(".directionLtr");
   const body = document.body;
   const elementsToToggle = [
-    document.getElementById("maxsidebar"),
-    document.getElementById("dashboard-section"),
-    document.getElementById("maxSidebarlogout"),
-    document.getElementById("payroll-plus-btn"),
+    document.querySelector(".maxsidebar"),
+    document.querySelector(".dashboard-section"),
+    document.querySelector(".maxSidebarlogout"),
+    ...document.querySelectorAll(".payroll-plus-btn"), // Changed from ID to class
     ...document.querySelectorAll(".tooltip"),
   ];
 
@@ -135,7 +135,7 @@ function setDarkMode(isDark) {
     themeIcon.setAttribute(
       "icon",
       "material-symbols:dark-mode-outline-rounded"
-    ); 
+    );
     // Change to dark mode icon
   }
 }
