@@ -162,6 +162,13 @@ body.dark-mode {
   color: var(--darkgreen);
 }
 
+.login-eye {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  cursor: pointer;
+}
+
 /* ------------------------ Desktop Sidebar ------------------------*/
 
 .maxsidebar {
@@ -1079,6 +1086,13 @@ body.rtl {
     border-left: none;
     border-right: 1px solid #e6e6e6;
   }
+  .login-eye {
+    position: absolute;
+    right: auto;
+    left: 10px;
+    top: 30px;
+    cursor: pointer;
+  }
 }
 
 body.dark-mode {
@@ -1102,13 +1116,15 @@ body.dark-mode {
 
 /* ---------------------- Attendence -------- */
 
+.input-group{
+  width: 300px !important;
+}
 .date-picker,
 .date-range-picker {
   background-color: #fff;
   border: 1px solid #ced4da;
   transition: border-color 0.3s ease;
   outline: none !important;
-  width: 300px !important;
 }
 
 .Download-Summary-btn {
@@ -1621,6 +1637,5 @@ body.dark-mode {
       right: auto;
       left: 0;
     }
-  
   }
 }
