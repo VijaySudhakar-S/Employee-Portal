@@ -169,6 +169,11 @@ body.dark-mode {
   cursor: pointer;
 }
 
+html[dir="rtl"] .login-eye {
+  right: auto;
+  left: 10px;
+}
+
 /* ------------------------ Desktop Sidebar ------------------------*/
 
 .maxsidebar {
@@ -1116,7 +1121,7 @@ body.dark-mode {
 
 /* ---------------------- Attendence -------- */
 
-.input-group{
+.input-group {
   width: 300px !important;
 }
 .date-picker,
