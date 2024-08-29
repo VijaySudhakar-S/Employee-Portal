@@ -53,19 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ============  Login =============
-
-function forgotPass() {
-  event.preventDefault();
-  document.getElementById("login-con").style.display = "none";
-  document.getElementById("forgotPass-con").style.display = "block";
-}
-
-function backLogPass() {
-  event.preventDefault();
-  document.getElementById("login-con").style.display = "block";
-  document.getElementById("forgotPass-con").style.display = "none";
-}
 
 // ============  Profile =============
 
